@@ -15,10 +15,6 @@ var _judgment_tween: Tween
 var _hit_data: Array[NoteHitData] = []
 
 
-func _enter_tree() -> void:
-	$Notes.chart = GlobalSettings.selected_chart
-
-
 func _ready() -> void:
 	$Control/SettingsVBox/UseFilteredCheckBox.button_pressed = GlobalSettings.use_filtered_playback
 	$Control/SettingsVBox/ShowOffsetCheckBox.button_pressed = GlobalSettings.show_offsets

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://24a7m43205mw"]
+
+[ext_resource type="PackedScene" uid="uid://dv2yxsk2pn2j" path="res://rhythm_minigame/main/rhythm_game.tscn" id="1_bpakj"]
+[ext_resource type="AudioStream" uid="uid://dt3jvmfdddep4" path="res://music/Koda_main.mp3" id="2_614qr"]
+
+[node name="Main" unique_id=1552747287 instance=ExtResource("1_bpakj")]
+
+[node name="Conductor" parent="." index="1" unique_id=630216901]
+bpm = 100.0
+first_beat_offset_ms = 0
+
+[node name="Player" parent="." index="2" unique_id=83078979]
+stream = ExtResource("2_614qr")
+
+[node name="Notes" parent="." index="3" unique_id=555600113]
+chart = 2
+
+[node name="UseFilteredCheckBox" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="0" unique_id=161184992]
+visible = false
+
+[node name="Control" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="1" unique_id=1339950176]
+visible = false
+
+[node name="ScrollSpeedInstructionsLabel" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="6" unique_id=575341510]
+visible = false
+
+[node name="ScrollSpeedHBox" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="7" unique_id=1667676722]
+visible = false
+
+[node name="ChartVBox" parent="Control" parent_id_path=PackedInt32Array(1641181851) index="3" unique_id=1345356978]
+visible = false

@@ -3,6 +3,8 @@ class_name ChartData
 enum Chart {
 	THE_COMEBACK = 0,
 	SYNC_TEST = 1,
+	KODA_SONG = 2,
+	WILL_SONG = 3,
 }
 
 const THE_COMEBACK_DATA: Array[Array] = [
@@ -123,6 +125,62 @@ const SYNC_TEST_DATA: Array[Array] = [
 	[1,0,0,0],
 ]
 
+const KODA_SONG_DATA: Array[Array] = [
+	[0], # Wait a bit so players can react
+
+	[1], # First few measures are just whole notes
+	[1],
+	[1],
+	[1],
+	[1,1],
+	[1,0,0,0, 0,0,0,1],
+	[1],
+	[0,1,0,0],
+	
+	[0,1,0,0], # Measure 10
+	[0,1,0,0],
+	[0,1,0,1],
+	[0,1,0,1],
+	[0,1,1,1],
+	[0,0,1,1, 1,1,0,0],
+	[1],
+	[0,1,0,1],
+	
+	[0,1,0,0], # Measure 18
+	[1,0,1,1],
+	[0,0,1,0],
+	[0,1,0,1],
+	[0,1],
+	[0,1,0,1],
+	[0,1],
+	[1,0,1,1],
+	
+	[0,0,1,0, 1,1,0,0], # Measure 26
+	[1,1,0,0, 0,0,0,0, 1,0,0,0, 1,0,0,0],
+	[0,1,1,1, 1,0,1,0],
+	[1,0,1,1],
+	[1,0,1,1, 0,1,1,1],
+	
+	[1,1,0,0, 0,0,0,0, 0,0,0,0, 1,0,0,0], # Measure 31
+	[1,1,1,1, 1,0,1,0],
+	[1,0,1,1],
+	[0,0,0,1],
+	[1,0,0,1],
+	[0,0,1,1],
+	
+	[1,0,1,1], # Measure 37
+	[0,1,0,1],
+	[1,1,0,1, 1,0,0,0],
+	[1],
+];
+
+const WILL_SONG_DATA: Array[Array] = [
+	[0,0,0,0], # Wait a bit so players can react to the first few notes
+
+	[1,1,0,1, 0,1,0,0],
+	[1,0,0,0, 0,0,1,1],
+	[1,0,0,0, 0,0,1,1],
+];
 
 static func get_chart_data(chart: Chart) -> Array[Array]:
 	match chart:
@@ -130,6 +188,10 @@ static func get_chart_data(chart: Chart) -> Array[Array]:
 			return ChartData.THE_COMEBACK_DATA
 		ChartData.Chart.SYNC_TEST:
 			return ChartData.SYNC_TEST_DATA
+		ChartData.Chart.KODA_SONG:
+			return ChartData.KODA_SONG_DATA
+		ChartData.Chart.WILL_SONG:
+			return ChartData.WILL_SONG_DATA
 		_:
 			assert(false, "Unknown chart: %d" % chart)
 			return ChartData.THE_COMEBACK_DATA
