@@ -1,0 +1,223 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dpproo7kus4en"]
+
+[ext_resource type="Script" uid="uid://5jev82h3htm" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_xse5c"]
+
+[resource]
+script = ExtResource("1_xse5c")
+starts = {
+"0": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(-119, 170),
+"start_id": "0"
+},
+&"1_1": {
+"dialogue": "Koda…",
+"offset": Vector2(160, 40),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(300, 251.00002),
+"speaker": 0
+},
+&"1_10": {
+"dialogue": "I guess since…I don’t really have anything to do now that my computer’s fried, maybe we could get the others and go out tonight?
+",
+"offset": Vector2(3560, 100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_11",
+"text": ""
+}
+},
+"size": Vector2(400, 440),
+"speaker": 10
+},
+&"1_11": {
+"dialogue": "I’m already texting the group chat!
+",
+"offset": Vector2(4020, 220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_12",
+"text": ""
+}
+},
+"size": Vector2(360, 400),
+"speaker": 1
+},
+&"1_12": {
+"dialogue": "Haha, alright, alright.
+",
+"offset": Vector2(4420, 220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_13",
+"text": ""
+}
+},
+"size": Vector2(380, 360),
+"speaker": 9
+},
+&"1_13": {
+"dialogue": "You gonna bring your guitar?
+",
+"offset": Vector2(4820, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_14",
+"text": ""
+}
+},
+"size": Vector2(320, 379.99997),
+"speaker": 1
+},
+&"1_14": {
+"dialogue": "…",
+"offset": Vector2(5200, 260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": ""
+}
+},
+"size": Vector2(400, 320),
+"speaker": 10
+},
+&"1_15": {
+"dialogue": "Yeah, why not?
+",
+"offset": Vector2(5660, 220),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(360, 360),
+"speaker": 5
+},
+&"1_2": {
+"dialogue": "That was incredible!  
+",
+"offset": Vector2(500, 20),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": Vector2(300, 280),
+"speaker": 1
+},
+&"1_3": {
+"dialogue": "You looked so cool while you were playing!",
+"offset": Vector2(840, 60),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": Vector2(320, 300),
+"speaker": 1
+},
+&"1_4": {
+"dialogue": "Thanks…",
+"offset": Vector2(1278.767, 113.13),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": ""
+}
+},
+"size": Vector2(300, 340),
+"speaker": 5
+},
+&"1_5": {
+"dialogue": "And…thanks for coming today.  You didn’t have to, especially since I’d been avoiding everyone this long.  It means a lot.
+",
+"offset": Vector2(1660, 80),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": ""
+}
+},
+"size": Vector2(360, 420),
+"speaker": 10
+},
+&"1_6": {
+"dialogue": "No need to thank me, I was happy to check in on a friend.  Just know that you don’t have to wait until it gets this bad to call on us.
+",
+"offset": Vector2(2060, 100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_7",
+"text": ""
+}
+},
+"size": Vector2(320, 400),
+"speaker": 0
+},
+&"1_7": {
+"dialogue": "Right.
+",
+"offset": Vector2(2400, 100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_8",
+"text": ""
+}
+},
+"size": Vector2(300, 380),
+"speaker": 0
+},
+&"1_8": {
+"dialogue": "And don’t be a stranger!  We want to actually see you from time to time!
+",
+"offset": Vector2(2740, 120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_9",
+"text": ""
+}
+},
+"size": Vector2(360, 360),
+"speaker": 1
+},
+&"1_9": {
+"dialogue": "Yeah, I’ll try.
+",
+"offset": Vector2(3120, 120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_10",
+"text": ""
+}
+},
+"size": Vector2(400, 400),
+"speaker": 4
+}
+}
+characters = "res://VN/characters.tres"

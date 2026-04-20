@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dvdlv6t6mhj72"]
+
+[ext_resource type="Script" uid="uid://5jev82h3htm" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_qy6cp"]
+
+[resource]
+script = ExtResource("1_qy6cp")
+starts = {
+"0": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(-136, 204),
+"start_id": "0"
+},
+&"1_1": {
+"dialogue": "This sounds terrible.",
+"offset": Vector2(160, 80),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(320, 320),
+"speaker": 11
+},
+&"1_2": {
+"dialogue": "No way, I was really getting into it!",
+"offset": Vector2(597, 99),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": Vector2(300.00006, 320),
+"speaker": 3
+},
+&"1_3": {
+"dialogue": "You don’t have to be nice.
+",
+"offset": Vector2(1000, 140),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": Vector2(320, 300),
+"speaker": 7
+},
+&"1_4": {
+"dialogue": " I mean it! Try it again, trust me.
+",
+"offset": Vector2(1400, 100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": ""
+}
+},
+"size": Vector2(320, 359.99997),
+"speaker": 0
+},
+&"1_5": {
+"dialogue": "Alright, alright.
+",
+"offset": Vector2(1760, 120),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(320, 320),
+"speaker": 4
+}
+}
+characters = "res://VN/characters.tres"

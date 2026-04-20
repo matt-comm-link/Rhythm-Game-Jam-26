@@ -1,0 +1,706 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://tvpuh2mhs3l"]
+
+[ext_resource type="Script" uid="uid://5jev82h3htm" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_bvsbo"]
+
+[resource]
+script = ExtResource("1_bvsbo")
+starts = {
+"0": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(-371, 125),
+"start_id": "0"
+},
+&"1_1": {
+"dialogue": "…!",
+"offset": Vector2(-120, 100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(300, 251),
+"speaker": 9
+},
+&"1_10": {
+"dialogue": "For now, it’s nothing my suck-o-matic can’t help with!
+",
+"offset": Vector2(3260, 280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_11",
+"text": ""
+}
+},
+"size": Vector2(340, 380),
+"speaker": 1
+},
+&"1_11": {
+"dialogue": "Your…what?",
+"offset": Vector2(3640, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_12",
+"text": ""
+}
+},
+"size": Vector2(360, 340),
+"speaker": 6
+},
+&"1_12": {
+"dialogue": "My suck-o-matic!
+",
+"offset": Vector2(4020, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_13",
+"text": ""
+}
+},
+"size": Vector2(360, 320),
+"speaker": 1
+},
+&"1_13": {
+"dialogue": "Is that…a tiny vacuum cleaner?
+",
+"offset": Vector2(4420, 340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_14",
+"text": ""
+}
+},
+"size": Vector2(380, 320),
+"speaker": 7
+},
+&"1_14": {
+"dialogue": "With hot rod flames? Yes. Yes it is.
+",
+"offset": Vector2(4840, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": ""
+}
+},
+"size": Vector2(340, 300),
+"speaker": 1
+},
+&"1_15": {
+"dialogue": "Well if it works it works.
+",
+"offset": Vector2(5220, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_16",
+"text": ""
+}
+},
+"size": Vector2(320, 300),
+"speaker": 4
+},
+&"1_16": {
+"dialogue": "Let’s see how she does!
+",
+"offset": Vector2(5655.195, 444.72314),
+"options": {
+0: {
+"condition": {},
+"link": &"3_1",
+"text": ""
+}
+},
+"size": Vector2(300, 340),
+"speaker": 0
+},
+&"1_17": {
+"dialogue": "...",
+"offset": Vector2(6240, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_18",
+"text": ""
+}
+},
+"size": Vector2(300, 246),
+"speaker": ""
+},
+&"1_18": {
+"dialogue": "Hey Koda, you know the others have been worried about you.",
+"offset": Vector2(6560, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"3_2",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 2
+},
+&"1_19": {
+"dialogue": "…",
+"offset": Vector2(7100, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_20",
+"text": ""
+}
+},
+"size": Vector2(340, 300),
+"speaker": 7
+},
+&"1_2": {
+"dialogue": "Hey, that was really good!
+",
+"offset": Vector2(220, 160),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": Vector2(320, 300),
+"speaker": 1
+},
+&"1_20": {
+"dialogue": "You’ve been isolating for a long time now and I know the only reason you responded to me today is because your PC broke.
+",
+"offset": Vector2(7460, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_21",
+"text": ""
+}
+},
+"size": Vector2(320, 340),
+"speaker": 2
+},
+&"1_21": {
+"dialogue": "…Yeah, sorry.",
+"offset": Vector2(7820, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_22",
+"text": ""
+}
+},
+"size": Vector2(320, 359.99997),
+"speaker": 6
+},
+&"1_22": {
+"dialogue": "What’s going on?
+",
+"offset": Vector2(8160, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_23",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 0
+},
+&"1_23": {
+"dialogue": "I don’t want to talk about it.",
+"offset": Vector2(8500, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_24",
+"text": ""
+}
+},
+"size": Vector2(340, 320),
+"speaker": 11
+},
+&"1_24": {
+"dialogue": "…",
+"offset": Vector2(8880, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_25",
+"text": ""
+}
+},
+"size": Vector2(300, 359.99997),
+"speaker": 2
+},
+&"1_25": {
+"dialogue": "Well, I can’t make you talk about anything you don’t want to, but you should also know you can rely on your friends to carry some of your burdens for you.  You don’t have to be alone here, we all still care about you.",
+"offset": Vector2(9220, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_26",
+"text": ""
+}
+},
+"size": Vector2(300, 339.99997),
+"speaker": 0
+},
+&"1_26": {
+"dialogue": "…",
+"offset": Vector2(9560, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_27",
+"text": ""
+}
+},
+"size": Vector2(320, 320),
+"speaker": 6
+},
+&"1_27": {
+"dialogue": "…I know.  It just…feels so trivial, and like it shouldn’t be such a problem in the first place",
+"offset": Vector2(9900, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_28",
+"text": ""
+}
+},
+"size": Vector2(360, 320),
+"speaker": 11
+},
+&"1_28": {
+"dialogue": "Is it about your music?
+",
+"offset": Vector2(10300, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_29",
+"text": ""
+}
+},
+"size": Vector2(300, 300),
+"speaker": 2
+},
+&"1_29": {
+"dialogue": "Yeah…I just can’t make myself happy with it anymore.",
+"offset": Vector2(10640, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_30",
+"text": ""
+}
+},
+"size": Vector2(360, 300),
+"speaker": 7
+},
+&"1_3": {
+"dialogue": " Oh, uh, thanks.  It wasn’t anything special.",
+"offset": Vector2(640, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 4
+},
+&"1_30": {
+"dialogue": "It always feels like I’m chasing something out of reach and it makes me hate everything I make.",
+"offset": Vector2(11040, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_31",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 11
+},
+&"1_31": {
+"dialogue": "he only thing I can think of is how much engagement I’m getting, how others are doing compared to me, how to stay relevant…It makes me hate creating at all.
+",
+"offset": Vector2(11380, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_32",
+"text": ""
+}
+},
+"size": Vector2(360, 320),
+"speaker": 11
+},
+&"1_32": {
+"dialogue": "...",
+"offset": Vector2(11780, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_33",
+"text": ""
+}
+},
+"size": Vector2(360, 320),
+"speaker": 3
+},
+&"1_33": {
+"dialogue": "Sorry, that was a lot.
+",
+"offset": Vector2(12160, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_34",
+"text": ""
+}
+},
+"size": Vector2(340, 320),
+"speaker": 7
+},
+&"1_34": {
+"dialogue": "No, no!  I’m glad you told me.
+",
+"offset": Vector2(12540, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_35",
+"text": ""
+}
+},
+"size": Vector2(360, 379.99997),
+"speaker": 1
+},
+&"1_35": {
+"dialogue": "It’s why I was so panicked when my PC broke, it felt like I would lose all of my music even though it hasn’t made me happy at all.",
+"offset": Vector2(12920, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_36",
+"text": ""
+}
+},
+"size": Vector2(440, 459.99997),
+"speaker": 11
+},
+&"1_36": {
+"dialogue": " Yeah, that makes sense.  And trying to carry that all on your shoulders…I can only imagine how difficult it’s been.",
+"offset": Vector2(13380, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"3_3",
+"text": ""
+}
+},
+"size": Vector2(460, 480),
+"speaker": 2
+},
+&"1_37": {
+"dialogue": "Hey Koda...",
+"offset": Vector2(14020, 560),
+"options": {
+0: {
+"condition": {},
+"link": &"1_38",
+"text": ""
+}
+},
+"size": Vector2(420, 420.00006),
+"speaker": 0
+},
+&"1_38": {
+"dialogue": "when was the last time you made something just for you because you like how it sounded?  No stakes, no posting, just something for you to play around with.
+",
+"offset": Vector2(14453.412, 609.72723),
+"options": {
+0: {
+"condition": {},
+"link": &"3_4",
+"text": ""
+}
+},
+"size": Vector2(420, 460),
+"speaker": 1
+},
+&"1_39": {
+"dialogue": "Um…probably years at this point",
+"offset": Vector2(15217.53, 782.1222),
+"options": {
+0: {
+"condition": {},
+"link": &"1_40",
+"text": ""
+}
+},
+"size": Vector2(380, 380),
+"speaker": 7
+},
+&"1_4": {
+"dialogue": "Sure it was, I know I can’t do something like that!  Don’t be so hard on yourself.",
+"offset": Vector2(980, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": ""
+}
+},
+"size": Vector2(300, 300),
+"speaker": 0
+},
+&"1_40": {
+"dialogue": "That might be part of the problem.  The music isn’t actually yours right now.  Sure you’re making it, but it’s for the nebulous listeners on the internet, not you.",
+"offset": Vector2(15681.356, 848.15314),
+"options": {
+0: {
+"condition": {},
+"link": &"1_41",
+"text": ""
+}
+},
+"size": Vector2(380, 360),
+"speaker": 0
+},
+&"1_41": {
+"dialogue": "our own inspiration and your interests have been collecting dust just like this PC.
+",
+"offset": Vector2(16080, 840),
+"options": {
+0: {
+"condition": {},
+"link": &"1_42",
+"text": ""
+}
+},
+"size": Vector2(320, 340),
+"speaker": 2
+},
+&"1_42": {
+"dialogue": "It’s not like I haven’t tried, it’s just that whenever I do, it feels like a waste of time.
+",
+"offset": Vector2(16440, 820),
+"options": {
+0: {
+"condition": {},
+"link": &"1_43",
+"text": ""
+}
+},
+"size": Vector2(380, 400),
+"speaker": 11
+},
+&"1_43": {
+"dialogue": "Doing something that makes you smile is never a waste of time, especially when you spend all the rest of your time working so hard.
+",
+"offset": Vector2(16860.25, 896.4684),
+"options": {
+0: {
+"condition": {},
+"link": &"1_44",
+"text": ""
+}
+},
+"size": Vector2(420, 460),
+"speaker": 0
+},
+&"1_44": {
+"dialogue": "I…guess so.",
+"offset": Vector2(17380, 980),
+"options": {
+0: {
+"condition": {},
+"link": &"1_45",
+"text": ""
+}
+},
+"size": Vector2(300, 360),
+"speaker": 4
+},
+&"1_45": {
+"dialogue": "Hey, why don’t you try it right now?  I need to go looking to see if anything is warped and needs replacing.",
+"offset": Vector2(17760, 960),
+"options": {
+0: {
+"condition": {},
+"link": &"1_46",
+"text": ""
+}
+},
+"size": Vector2(360, 360),
+"speaker": 1
+},
+&"1_46": {
+"dialogue": "Huh? Right now? I don’t have anything like that.",
+"offset": Vector2(18240.457, 1017.25665),
+"options": {
+0: {
+"condition": {},
+"link": &"1_47",
+"text": ""
+}
+},
+"size": Vector2(300, 340),
+"speaker": 9
+},
+&"1_47": {
+"dialogue": "Improv it!  Stretch those creative muscles a little.  Let loose a little, I’ll like whatever you end up playing.
+",
+"offset": Vector2(18640, 1040),
+"options": {
+0: {
+"condition": {},
+"link": &"1_48",
+"text": ""
+}
+},
+"size": Vector2(360, 420),
+"speaker": 1
+},
+&"1_48": {
+"dialogue": "I guess I could try.  ",
+"offset": Vector2(19100, 1020),
+"options": {
+0: {
+"condition": {},
+"link": &"1_49",
+"text": ""
+}
+},
+"size": Vector2(400, 420),
+"speaker": 7
+},
+&"1_49": {
+"dialogue": "No promises it’ll be any good though.",
+"offset": Vector2(19520, 1020),
+"options": {
+0: {
+"condition": {},
+"link": &"1_50",
+"text": ""
+}
+},
+"size": Vector2(420, 380),
+"speaker": 6
+},
+&"1_5": {
+"dialogue": "Right…er, how’s the PC?
+",
+"offset": Vector2(1380, 300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": ""
+}
+},
+"size": Vector2(320, 360),
+"speaker": 9
+},
+&"1_50": {
+"dialogue": "That’s the spirit!  I’m sure it’ll be great!.",
+"offset": Vector2(20063.555, 1117.1083),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(400, 380),
+"speaker": 0
+},
+&"1_6": {
+"dialogue": "Well, I found one of the issues",
+"offset": Vector2(1740, 300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_7",
+"text": ""
+}
+},
+"size": Vector2(320, 320),
+"speaker": 0
+},
+&"1_7": {
+"dialogue": "There was a lot of dust down there causing overheating.  When enough of it accumulates, it can cause all kinds of problems",
+"offset": Vector2(2080, 300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_8",
+"text": ""
+}
+},
+"size": Vector2(380, 360),
+"speaker": 2
+},
+&"1_8": {
+"dialogue": "your PC was probably seconds from setting itself on fire!.",
+"offset": Vector2(2480, 260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_9",
+"text": ""
+}
+},
+"size": Vector2(380, 420),
+"speaker": 3
+},
+&"1_9": {
+"dialogue": "In your case, the thermal paste dried up and it might have caused some things to warp, but I’ll have to investigate further.",
+"offset": Vector2(2880, 260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_10",
+"text": ""
+}
+},
+"size": Vector2(320, 380),
+"speaker": 2
+},
+&"3_1": {
+"link": &"1_17",
+"offset": Vector2(6000, 600),
+"signalValue": "HideKoda"
+},
+&"3_2": {
+"link": &"1_19",
+"offset": Vector2(6880, 580),
+"signalValue": "ShowKoda"
+},
+&"3_3": {
+"link": &"1_37",
+"offset": Vector2(13840, 760),
+"signalValue": "HideKoda"
+},
+&"3_4": {
+"link": &"1_39",
+"offset": Vector2(14950.186, 823.9955),
+"signalValue": "ShowKoda"
+}
+}
+characters = "res://VN/characters.tres"

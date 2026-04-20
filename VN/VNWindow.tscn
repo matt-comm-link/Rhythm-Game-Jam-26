@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cgni16ft4o07k"]
+
+[ext_resource type="Script" uid="uid://co3nlglrxt8lf" path="res://VN/VnWindowManager.cs" id="1_s6kcp"]
+[ext_resource type="PackedScene" uid="uid://bkxnx2akyp3mq" path="res://VN/SCENES/vn1.tscn" id="2_ywxbi"]
+
+[node name="VnWindow" type="Control" unique_id=1526143931]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s6kcp")
+
+[node name="VN" parent="." unique_id=316021697 instance=ExtResource("2_ywxbi")]
+layout_mode = 1
