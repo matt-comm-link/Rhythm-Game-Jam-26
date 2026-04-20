@@ -1,23 +1,23 @@
-[gd_scene format=3 uid="uid://24a7m43205mw"]
+[gd_scene format=3 uid="uid://bxvpq8ciaa0va"]
 
-[ext_resource type="PackedScene" uid="uid://dv2yxsk2pn2j" path="res://rhythm_minigame/main/rhythm_game.tscn" id="1_bpakj"]
-[ext_resource type="AudioStream" uid="uid://dt3jvmfdddep4" path="res://music/Koda_main.mp3" id="2_614qr"]
-[ext_resource type="AudioStream" uid="uid://dx2516n4td43x" path="res://rhythm_minigame/sound_effects/Koda_success.mp3" id="3_1kymv"]
+[ext_resource type="PackedScene" uid="uid://dv2yxsk2pn2j" path="res://rhythm_minigame/main/rhythm_game.tscn" id="1_j7a1u"]
+[ext_resource type="AudioStream" uid="uid://dwfykmorq32wn" path="res://music/Combined.mp3" id="2_dakow"]
+[ext_resource type="AudioStream" uid="uid://cki2yaucsapih" path="res://rhythm_minigame/sound_effects/Combined_success.mp3" id="3_mwmhr"]
 
-[node name="Main" unique_id=1552747287 instance=ExtResource("1_bpakj")]
+[node name="Main" unique_id=1552747287 instance=ExtResource("1_j7a1u")]
 
 [node name="Conductor" parent="." index="1" unique_id=630216901]
 bpm = 100.0
 first_beat_offset_ms = 0
 
 [node name="Player" parent="." index="2" unique_id=83078979]
-stream = ExtResource("2_614qr")
+stream = ExtResource("2_dakow")
 
 [node name="SuccessJingle" parent="." index="3" unique_id=172773105]
-stream = ExtResource("3_1kymv")
+stream = ExtResource("3_mwmhr")
 
 [node name="Notes" parent="." index="4" unique_id=555600113]
-chart = 2
+chart = 4
 
 [node name="UseFilteredCheckBox" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="0" unique_id=161184992]
 visible = false
