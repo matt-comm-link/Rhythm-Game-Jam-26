@@ -27,6 +27,9 @@ first_beat_offset_ms = 8283
 stream = ExtResource("4_s0t12")
 volume_db = -12.0
 
+[node name="SuccessJingle" type="AudioStreamPlayer" parent="." unique_id=172773105]
+volume_db = -12.0
+
 [node name="Notes" type="Node2D" parent="." unique_id=555600113 node_paths=PackedStringArray("conductor")]
 position = Vector2(640, 594)
 script = ExtResource("5_gmm1s")
@@ -189,7 +192,7 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 40
 text = "Song Complete!
 
-Press R to play again"
+Press Space to continue, or press R to play again"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -269,6 +272,7 @@ volume_db = 2.0
 script = ExtResource("8_628pa")
 conductor = NodePath("../Conductor")
 
+[connection signal="finished" from="Player" to="SuccessJingle" method="play" binds= [0.0]]
 [connection signal="note_hit" from="Notes" to="." method="_on_note_hit"]
 [connection signal="play_stats_updated" from="Notes" to="." method="_on_play_stats_updated"]
 [connection signal="song_finished" from="Notes" to="." method="_on_song_finished"]

@@ -5,6 +5,7 @@ enum Chart {
 	SYNC_TEST = 1,
 	KODA_SONG = 2,
 	WILL_SONG = 3,
+	COMBINED_SONG = 4,
 }
 
 const THE_COMEBACK_DATA: Array[Array] = [
@@ -175,11 +176,104 @@ const KODA_SONG_DATA: Array[Array] = [
 ];
 
 const WILL_SONG_DATA: Array[Array] = [
-	[0,0,0,0], # Wait a bit so players can react to the first few notes
+	[0], # Wait a bit so players can react to the first few notes
 
 	[1,1,0,1, 0,1,0,0],
+	[0,1,0,1],
 	[1,0,0,0, 0,0,1,1],
-	[1,0,0,0, 0,0,1,1],
+	[1,1],
+	
+	[1,1,0,1, 0,0,1,0], # Measure 6
+	[1,0,0,1, 0,1,0,0],
+	[1,0,0,1, 0,1,0,1],
+	[1,1],
+	[1,0,0,1],
+	[1,1,0,0, 0,0,0,0],
+	
+	[1,0,0,0, 0,0,0,1], # Measure 12
+	[0,1,0,0, 0,0,1,1],
+	[1,1,0,1, 0,0,1,0],
+	[1,1,0,0, 1,0,0,1],
+	[1,1,0,0, 1,0,0,1],
+	
+	[1,1,0,0, 0,0,1,1], # Measure 17
+	[1,1,0,0, 1,0,0,0],
+	[1,1,0,0, 1,0,0,1],
+	[1,1,0,0, 1,0,0,1],
+	[1,1,0,0, 0,0,1,1],
+	
+	[1,1,0,0, 1,0,0,0], # Measure 22
+	[1,1,0,0, 1,0,0,1],
+	[1,1,0,0, 1,0,0,1],
+	[1,0,1,0, 1,1,0,1], # Supposed to have a triplet, but I don't have time to add support for triplets
+	
+	[1,0,1,0, 1,1,1,1], # Measure 26
+	[1,1,1,1],
+	[1,1,1,1, 1,1,1,1],
+	[1,0,1,0, 1,1,0,1], # Supposed to have a triplet, but I don't have time to add support for triplets
+	
+	[1,1,0,1, 0,1,0,0], # Measure 30
+	[1,1,1,1, 0,1,0,0],
+	[1,1,1,1, 0,1,0,0],
+	[1,1],
+	[1,0,0,1],
+	[1,1,0,0, 0,0,0,0],
+	
+	[1,0,0,0, 0,0,0,1], # Measure 36
+	[0,1,0,0, 0,0,1,1],
+	[1,1,0,0, 0,0,0,0],
+	[1,1,0,0, 1,0,0,1],
+	[1,1,0,0, 1,0,0,1],
+];
+
+const COMBINED_SONG_DATA: Array[Array] = [
+	[0], # Wait a bit so players can react to the first few notes
+	
+	[1,1],
+	[1],
+	[1],
+	[1,1],
+	[1,1,0,1, 1,0,1,0],
+	[1],
+	[1,0,0,1],
+	
+	[1,1,0,0], # Measure 9
+	[1,1,0,0],
+	[1,1,0,0],
+	[1,1,0,1],
+	[1,0,0,1],
+	[1,1],
+	[1,0,1,0, 1,1,1,1],
+	[1,1,1,1],
+	
+	[1,1,0,0, 0,0,1,1], # Measure 17
+	[1,1,1,0, 1,0,0,0],
+	[1,0,1,1],
+	[1,0,0,0, 1,0,0,1],
+	[1,0,0,1],
+	[1,1],
+	[1,0,1,1],
+	
+	[1,0,0,0, 1,0,0,1], # Measure 24
+	[1,0,1,1, 0,1,0,1],
+	[1,0,1,0, 1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1, 1,1,1,1],
+	
+	[1,0,1,1, 0,1,0,1], # Measure 29
+	[1,1,0,1, 0,1,0,0],
+	[1,1,1,1, 0,1,0,0],
+	[1,1,1,1, 0,1,0,0],
+	[1,1],
+	[1,0,0,1],
+	
+	[1,1,0,0, 0,0,0,0], # Measure 35
+	[1,0,0,0, 1,0,0,1],
+	[0,1,0,0, 0,0,1,1],
+	[1,1,1,1, 0,1,1,0],
+	[1,1,0,0, 1,0,0,1],
+	[1,1,0,0, 1,0,1,0],
+	[1],
 ];
 
 static func get_chart_data(chart: Chart) -> Array[Array]:
@@ -192,6 +286,8 @@ static func get_chart_data(chart: Chart) -> Array[Array]:
 			return ChartData.KODA_SONG_DATA
 		ChartData.Chart.WILL_SONG:
 			return ChartData.WILL_SONG_DATA
+		ChartData.Chart.COMBINED_SONG:
+			return ChartData.COMBINED_SONG_DATA
 		_:
 			assert(false, "Unknown chart: %d" % chart)
 			return ChartData.THE_COMEBACK_DATA

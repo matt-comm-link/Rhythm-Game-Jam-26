@@ -11,9 +11,11 @@ class NoteHitData:
 		self.type = type
 		self.error = error
 
+signal rhythm_game_completed()
+
 var _judgment_tween: Tween
 var _hit_data: Array[NoteHitData] = []
-
+var _completed: bool = false;
 
 func _ready() -> void:
 	$Control/SettingsVBox/UseFilteredCheckBox.button_pressed = GlobalSettings.use_filtered_playback
@@ -38,7 +40,10 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed(&"restart"):
+		_completed = false;
 		get_tree().reload_current_scene()
+	elif Input.is_action_just_pressed(&"main_key") && _completed:
+		rhythm_game_completed.emit();
 	$Control/ErrorGraphVBox/CenterContainer/TimeGraph.queue_redraw()
 
 
