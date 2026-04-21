@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c73ah56m01y2h"]
 
+[ext_resource type="Texture2D" uid="uid://dy7s7mk4owghq" path="res://VN/sprites/kodabedroom.png" id="1_3fv5s"]
 [ext_resource type="Script" uid="uid://ulwvlhvwmxgn" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="1_22jta"]
 [ext_resource type="Texture2D" uid="uid://hn4jqb0y0rku" path="res://VN/sprites/Will Expressions/whimsyannoyed.png" id="2_3fv5s"]
 [ext_resource type="Texture2D" uid="uid://da2vaxuv8dqdn" path="res://VN/sprites/Will Expressions/whimsyannoyedDim.png" id="3_aq2gs"]
@@ -55,6 +56,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_3fv5s")
+expand_mode = 2
 
 [node name="DialogueBox" type="Panel" parent="." unique_id=20179451 node_paths=PackedStringArray("portraitWill", "portraitKoda", "bgRect")]
 visible = false
@@ -99,6 +102,7 @@ dictKoda = Dictionary[String, Texture2D]({
 willVisible = true
 kodaVisible = true
 bgVisible = true
+dictSFX = null
 data = ExtResource("26_22jta")
 start_id = "0"
 hide_portrait = true

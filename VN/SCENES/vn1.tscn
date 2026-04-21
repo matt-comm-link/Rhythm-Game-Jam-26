@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bkxnx2akyp3mq"]
 
+[ext_resource type="Texture2D" uid="uid://dy7s7mk4owghq" path="res://VN/sprites/kodabedroom.png" id="1_2db3f"]
 [ext_resource type="Script" uid="uid://ulwvlhvwmxgn" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="1_v878a"]
 [ext_resource type="Texture2D" uid="uid://da2vaxuv8dqdn" path="res://VN/sprites/Will Expressions/whimsyannoyedDim.png" id="3_s1v16"]
 [ext_resource type="Script" uid="uid://btab0dpjsijxk" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="3_viw0m"]
@@ -48,6 +49,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="BGRect" type="TextureRect" parent="." unique_id=1245602688]
+visible = false
 z_index = -5
 layout_mode = 1
 anchors_preset = 15
@@ -55,6 +57,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_2db3f")
+expand_mode = 2
 
 [node name="DialogueBox" type="Panel" parent="." unique_id=20179451 node_paths=PackedStringArray("portraitWill", "portraitKoda", "bgRect")]
 visible = false
@@ -97,6 +101,7 @@ dictKoda = Dictionary[String, Texture2D]({
 "upset": ExtResource("18_cgjia")
 })
 bgVisible = null
+dictSFX = null
 data = ExtResource("26_5vc62")
 start_id = "0"
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_c6wh6"), SubResource("RichTextEffect_pyhwf"), SubResource("RichTextEffect_fu5un")])

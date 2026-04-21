@@ -25,6 +25,8 @@ var kodaCurrentTexture : String = "neutral";
 
 var gameManager;
 
+@export var dictSFX : Dictionary[String, AudioStream];
+
 
 ## Triggered when a dialogue has started. Passes [param id] of the dialogue tree as defined in the StartNode.
 signal dialogue_started(id : String)
@@ -174,6 +176,8 @@ var _sub_container : BoxContainer
 var _wait_effect : RichTextWait
 
 
+var sfxPlayer : AudioStreamPlayer
+
 func _enter_tree():
 	if get_child_count() > 0:
 		for child in get_children():
@@ -200,6 +204,8 @@ func _enter_tree():
 	portrait.texture = sample_portrait
 	portrait.visible = not hide_portrait
 	
+	sfxPlayer = AudioStreamPlayer.new();
+	add_child(sfxPlayer);
 	
 	
 	
@@ -364,6 +370,10 @@ func _on_option_selected(idx : int):
 func _on_dialogue_signal(value : String):
 	if gameManager == null:
 		return;
+	if value.contains(("SFX")):
+		sfxPlayer.stream = dictSFX[value];
+		sfxPlayer.play();
+		
 		
 	if value == "ShowWill":
 		willVisible = true;
