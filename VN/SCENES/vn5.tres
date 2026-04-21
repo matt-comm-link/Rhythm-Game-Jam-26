@@ -1,0 +1,652 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://bv5y2xr0yucoy"]
+
+[ext_resource type="Script" uid="uid://5jev82h3htm" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_h55e5"]
+
+[resource]
+script = ExtResource("1_h55e5")
+starts = {
+"0": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(-336, -13),
+"start_id": "0"
+},
+&"1_1": {
+"dialogue": "Hey, that sounded awesome!
+",
+"offset": Vector2(-88, -42),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(440, 380),
+"speaker": 1
+},
+&"1_10": {
+"dialogue": "I guess I had fun up there.
+",
+"offset": Vector2(3560, 180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_11",
+"text": ""
+}
+},
+"size": Vector2(300, 360),
+"speaker": 5
+},
+&"1_11": {
+"dialogue": "You could always come back, you know.  Play like you just did and riff with the others.
+",
+"offset": Vector2(3880, 180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_12",
+"text": ""
+}
+},
+"size": Vector2(320, 420),
+"speaker": 0
+},
+&"1_12": {
+"dialogue": "I know, I only worry that it’s been too long.
+",
+"offset": Vector2(4220, 220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_13",
+"text": ""
+}
+},
+"size": Vector2(300, 379.99994),
+"speaker": 9
+},
+&"1_13": {
+"dialogue": "We’d all love to see you around again.  Like I said, the others are worried about you, too.
+",
+"offset": Vector2(4560, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_14",
+"text": ""
+}
+},
+"size": Vector2(320, 340),
+"speaker": 2
+},
+&"1_14": {
+"dialogue": "Right…I guess it really has been a while since I’ve done anything for myself.  ",
+"offset": Vector2(4900, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": ""
+}
+},
+"size": Vector2(320, 360),
+"speaker": 6
+},
+&"1_15": {
+"dialogue": "It’s so easy to get swept up in how others are doing that I ignored the parts of making music that I liked in the first place.
+",
+"offset": Vector2(5240, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_16",
+"text": ""
+}
+},
+"size": Vector2(360, 380),
+"speaker": 7
+},
+&"1_16": {
+"dialogue": "It’s never too late to go back to where you started.
+",
+"offset": Vector2(5620, 260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_17",
+"text": ""
+}
+},
+"size": Vector2(360, 379.99994),
+"speaker": 0
+},
+&"1_17": {
+"dialogue": "Yeah, maybe not…
+",
+"offset": Vector2(6000, 260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_18",
+"text": ""
+}
+},
+"size": Vector2(340, 399.99994),
+"speaker": 7
+},
+&"1_18": {
+"dialogue": "Speaking of which, did you find anything else?",
+"offset": Vector2(6360, 280),
+"options": {
+0: {
+"condition": {},
+"link": &"3_1",
+"text": ""
+}
+},
+"size": Vector2(320, 340),
+"speaker": 4
+},
+&"1_19": {
+"dialogue": "Well…
+",
+"offset": Vector2(7060, 280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_20",
+"text": ""
+}
+},
+"size": Vector2(360, 340),
+"speaker": 0
+},
+&"1_2": {
+"dialogue": "You really think so?
+",
+"offset": Vector2(460, 40),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 4
+},
+&"1_20": {
+"dialogue": "It looks like the GPU ended up overburdened and caused the PCI-Express slot to bend.",
+"offset": Vector2(7440, 280),
+"options": {
+0: {
+"condition": {},
+"link": &"3_2",
+"text": ""
+}
+},
+"size": Vector2(300, 400),
+"speaker": 2
+},
+&"1_21": {
+"dialogue": "Okay…what does that mean?",
+"offset": Vector2(7920, 300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_22",
+"text": ""
+}
+},
+"size": Vector2(360, 360),
+"speaker": 4
+},
+&"1_22": {
+"dialogue": "It means you’ll…likely have to replace the motherboard.",
+"offset": Vector2(8320, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_23",
+"text": ""
+}
+},
+"size": Vector2(320, 400.00006),
+"speaker": 3
+},
+&"1_23": {
+"dialogue": "…!",
+"offset": Vector2(8700, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_24",
+"text": ""
+}
+},
+"size": Vector2(340, 360),
+"speaker": 7
+},
+&"1_24": {
+"dialogue": "How long will that take?
+",
+"offset": Vector2(9060, 260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_25",
+"text": ""
+}
+},
+"size": Vector2(320, 360),
+"speaker": 7
+},
+&"1_25": {
+"dialogue": "I could probably get one in plus the thermal paste in about a week.  When your PC cools down it should be able to turn on, but I wouldn’t do more than the basics on it for now.
+",
+"offset": Vector2(9433.833, 357.5985),
+"options": {
+0: {
+"condition": {},
+"link": &"1_26",
+"text": ""
+}
+},
+"size": Vector2(440, 440),
+"speaker": 0
+},
+&"1_26": {
+"dialogue": "Great…I was supposed to upload a new song today, what if I lost all my progress?
+",
+"offset": Vector2(9920, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_27",
+"text": ""
+}
+},
+"size": Vector2(400, 400.00006),
+"speaker": 8
+},
+&"1_27": {
+"dialogue": "Koda, I think this is a good time for you to take a break and reconnect with the music you actually like.
+",
+"offset": Vector2(10380, 340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_28",
+"text": ""
+}
+},
+"size": Vector2(380, 420.00006),
+"speaker": 0
+},
+&"1_28": {
+"dialogue": "I…",
+"offset": Vector2(10820, 380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_29",
+"text": ""
+}
+},
+"size": Vector2(320, 360),
+"speaker": 8
+},
+&"1_29": {
+"dialogue": "There was something else I found down there",
+"offset": Vector2(11180, 380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_30",
+"text": ""
+}
+},
+"size": Vector2(400, 399.99988),
+"speaker": 0
+},
+&"1_3": {
+"dialogue": "Yeah!  How did it feel to play it?  It looked like you really started getting into the zone there.
+",
+"offset": Vector2(840, 40),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": Vector2(340, 380),
+"speaker": 1
+},
+&"1_30": {
+"dialogue": "!! Thats-
+",
+"offset": Vector2(11620, 380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_31",
+"text": ""
+}
+},
+"size": Vector2(360, 360),
+"speaker": 9
+},
+&"1_31": {
+"dialogue": "You always used this guitar pick in high school right?
+",
+"offset": Vector2(12020, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_32",
+"text": ""
+}
+},
+"size": Vector2(400, 359.99988),
+"speaker": 1
+},
+&"1_32": {
+"dialogue": "Yeah…it was the only purple one I had.
+",
+"offset": Vector2(12491.37, 484.26514),
+"options": {
+0: {
+"condition": {},
+"link": &"1_34",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 10
+},
+&"1_33": {
+"dialogue": "  You were so short it looked absurd with you!",
+"offset": Vector2(13160, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_35",
+"text": ""
+}
+},
+"size": Vector2(380, 379.9999),
+"speaker": 0
+},
+&"1_34": {
+"dialogue": "I remember you dragging that guitar around with you.",
+"offset": Vector2(12820, 580),
+"options": {
+0: {
+"condition": {},
+"link": &"1_33",
+"text": ""
+}
+},
+"size": Vector2(320, 319.99997),
+"speaker": 1
+},
+&"1_35": {
+"dialogue": "Hey! I grew eventually…
+",
+"offset": Vector2(13560, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_36",
+"text": ""
+}
+},
+"size": Vector2(340, 319.9999),
+"speaker": 11
+},
+&"1_36": {
+"dialogue": "Yup, grew right into that guitar, it looked natural with you.",
+"offset": Vector2(13940, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_37",
+"text": ""
+}
+},
+"size": Vector2(320, 379.9999),
+"speaker": 0
+},
+&"1_37": {
+"dialogue": "What I’m trying to say is…you don’t need this computer to make good music, you’ve already got it in you.",
+"offset": Vector2(14280, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_38",
+"text": ""
+}
+},
+"size": Vector2(420, 380),
+"speaker": 3
+},
+&"1_38": {
+"dialogue": "You just need to spend time reconnecting with yourself and your friends.  Hell, maybe you even need a few days where you don’t try to make music at all! Like I said, you can’t spend all your time working.  Where’s the joy in that?
+",
+"offset": Vector2(14801.821, 569.9407),
+"options": {
+0: {
+"condition": {},
+"link": &"1_39",
+"text": ""
+}
+},
+"size": Vector2(420, 400),
+"speaker": 0
+},
+&"1_39": {
+"dialogue": "I guess so…it’s…only a week anyway, right?",
+"offset": Vector2(15280, 600),
+"options": {
+0: {
+"condition": {},
+"link": &"1_40",
+"text": ""
+}
+},
+"size": Vector2(380, 420),
+"speaker": 5
+},
+&"1_4": {
+"dialogue": "It actually…felt pretty nice.  It’s been a while since I just played for the sake of it.  ",
+"offset": Vector2(1220, 60),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": ""
+}
+},
+"size": Vector2(380, 420),
+"speaker": 5
+},
+&"1_40": {
+"dialogue": "Exactly, and I’ll help you put everything back together and make sure it’s all running smoothly.",
+"offset": Vector2(15720, 620),
+"options": {
+0: {
+"condition": {},
+"link": &"1_41",
+"text": ""
+}
+},
+"size": Vector2(340, 379.99988),
+"speaker": 0
+},
+&"1_41": {
+"dialogue": "Okay…okay, yeah.  I think I can do that…
+",
+"offset": Vector2(16119.155, 794.0432),
+"options": {
+0: {
+"condition": {},
+"link": &"1_42",
+"text": ""
+}
+},
+"size": Vector2(360, 360),
+"speaker": 10
+},
+&"1_42": {
+"dialogue": "Great!  In that case–
+",
+"offset": Vector2(16560, 800),
+"options": {
+0: {
+"condition": {},
+"link": &"1_43",
+"text": ""
+}
+},
+"size": Vector2(380, 339.99997),
+"speaker": 1
+},
+&"1_43": {
+"dialogue": "Actually, can I try something?
+",
+"offset": Vector2(16980, 800),
+"options": {
+0: {
+"condition": {},
+"link": &"1_44",
+"text": ""
+}
+},
+"size": Vector2(400, 300),
+"speaker": 10
+},
+&"1_44": {
+"dialogue": "Yeah, sure, what is it?",
+"offset": Vector2(17420, 820),
+"options": {
+0: {
+"condition": {},
+"link": &"1_45",
+"text": ""
+}
+},
+"size": Vector2(360, 340.00003),
+"speaker": 0
+},
+&"1_45": {
+"dialogue": "I just haven’t played with this in a while.  Do you mind…?
+",
+"offset": Vector2(17840, 820),
+"options": {
+0: {
+"condition": {},
+"link": &"1_46",
+"text": ""
+}
+},
+"size": Vector2(340, 339.99997),
+"speaker": 10
+},
+&"1_46": {
+"dialogue": "I’d be happy to listen.",
+"offset": Vector2(18240, 840),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(320, 340),
+"speaker": 1
+},
+&"1_5": {
+"dialogue": "Even if I was technically background music for you.",
+"offset": Vector2(1620, 60),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": ""
+}
+},
+"size": Vector2(300, 380),
+"speaker": 4
+},
+&"1_6": {
+"dialogue": "I see no downside here, two birds with one stone!
+",
+"offset": Vector2(2032.5092, 130.36421),
+"options": {
+0: {
+"condition": {},
+"link": &"1_7",
+"text": ""
+}
+},
+"size": Vector2(300, 360),
+"speaker": 0
+},
+&"1_7": {
+"dialogue": "Honestly though, it was nice to see you in your element again.  You were always a great live performer!
+",
+"offset": Vector2(2421.9597, 191.85641),
+"options": {
+0: {
+"condition": {},
+"link": &"1_8",
+"text": ""
+}
+},
+"size": Vector2(360, 420),
+"speaker": 0
+},
+&"1_8": {
+"dialogue": "I was alright…
+",
+"offset": Vector2(2840, 200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_9",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 10
+},
+&"1_9": {
+"dialogue": "No way!  Give yourself a little more credit than that!",
+"offset": Vector2(3220, 180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_10",
+"text": ""
+}
+},
+"size": Vector2(300, 380),
+"speaker": 3
+},
+&"3_1": {
+"link": &"1_19",
+"offset": Vector2(6771.143, 431.34375),
+"signalValue": "HideKoda"
+},
+&"3_2": {
+"link": &"1_21",
+"offset": Vector2(7720, 720),
+"signalValue": "ShowKoda"
+}
+}
+characters = "res://VN/characters.tres"

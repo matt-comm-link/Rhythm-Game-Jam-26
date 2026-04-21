@@ -4,6 +4,30 @@ class_name DialogueBox
 extends Panel
  
 
+@export var NextScene : int = 0;
+
+##My hacky portrait stuff - mattihase
+@export var portraitWill : TextureRect;
+
+@export var portraitKoda : TextureRect;
+@export var bgRect: TextureRect;
+
+@export var dictWill : Dictionary[String, Texture2D];
+@export var dictKoda : Dictionary[String, Texture2D];
+
+var willCurrentTexture : String = "neutral";
+var kodaCurrentTexture : String = "neutral";
+
+##will or koda
+@export var willVisible : bool;
+@export var kodaVisible : bool;
+@export var bgVisible : bool;
+
+var gameManager;
+
+@export var dictSFX : Dictionary[String, AudioStream];
+
+
 ## Triggered when a dialogue has started. Passes [param id] of the dialogue tree as defined in the StartNode.
 signal dialogue_started(id : String)
 ## Triggered when a single dialogue block has been processed.
@@ -136,6 +160,7 @@ var variables : Dictionary
 var characters : Array[Character]
 ## Displays the portrait image of the speaker in the [DialogueBox]. Access the speaker's texture by [member DialogueBox.portrait.texture]. This value is automatically set while running a dialogue tree.
 var portrait : TextureRect
+
 ## Displays the name of the speaker in the [DialogueBox]. Access the speaker name by [code]DialogueBox.speaker_label.text[/code]. This value is automatically set while running a dialogue tree.
 var speaker_label : Label
 ## Displays the dialogue text. This node's value is automatically set while running a dialogue tree.
@@ -151,11 +176,14 @@ var _sub_container : BoxContainer
 var _wait_effect : RichTextWait
 
 
+var sfxPlayer : AudioStreamPlayer
+
 func _enter_tree():
 	if get_child_count() > 0:
 		for child in get_children():
 			remove_child(child)
 			child.queue_free()
+	gameManager = get_parent().get_parent();
 	
 	var margin_container = MarginContainer.new()
 	add_child(margin_container)
@@ -175,6 +203,11 @@ func _enter_tree():
 	portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT
 	portrait.texture = sample_portrait
 	portrait.visible = not hide_portrait
+	
+	sfxPlayer = AudioStreamPlayer.new();
+	add_child(sfxPlayer);
+	
+	
 	
 	_sub_container = BoxContainer.new()
 	_main_container.add_child(_sub_container)
@@ -282,13 +315,29 @@ func _on_dialogue_processed(speaker : Variant, dialogue : String, options : Arra
 	speaker_label.text = ''
 	portrait.texture = null
 	portrait.visible = not hide_portrait
+	
+	
 	if speaker is Character:
-		speaker_label.text = speaker.name
+		speaker_label.text = speaker.name.split("!")[1];
 		speaker_label.modulate = speaker.color
 		portrait.texture = speaker.image
 		if not speaker.image: portrait.hide()
+		if speaker.name.contains("Will"):
+			willCurrentTexture = speaker.name.split("!")[0];
+			portraitWill.texture = dictWill[willCurrentTexture];
+			if !kodaCurrentTexture.contains("dim"):
+				kodaCurrentTexture = "dim" + kodaCurrentTexture;
+			portraitKoda.texture = dictKoda[kodaCurrentTexture];
+		if speaker.name.contains("Koda"):
+			kodaCurrentTexture = speaker.name.split("!")[0];
+			portraitKoda.texture = dictKoda[kodaCurrentTexture];
+			if !willCurrentTexture.contains("dim"):
+				willCurrentTexture = "dim" + willCurrentTexture;
+			portraitWill.texture = dictWill[willCurrentTexture];
+		portraitWill.visible = willVisible;
+		portraitKoda.visible = kodaVisible;	
 	elif speaker is String:
-		speaker_label.text = speaker
+		speaker_label.text = speaker.split("!")[1];
 		speaker_label.modulate = Color.WHITE
 		portrait.hide()
 	
@@ -319,6 +368,34 @@ func _on_option_selected(idx : int):
 
 
 func _on_dialogue_signal(value : String):
+	if gameManager == null:
+		return;
+	if value.contains(("SFX")):
+		sfxPlayer.stream = dictSFX[value];
+		sfxPlayer.play();
+		
+		
+	if value == "ShowWill":
+		willVisible = true;
+		portraitWill.show();
+	if value == "HideWill":
+		willVisible = false;
+		portraitWill.hide();	
+	if value == "ShowKoda":
+		kodaVisible = true;
+		portraitKoda.show();	
+	if value == "HideKoda":
+		kodaVisible = false;
+		portraitKoda.hide();
+
+	if value == "ShowBG":
+		bgVisible = true;
+		bgRect.show();
+	if value == "HideBG":
+		bgVisible = false;
+		bgRect.hide();
+	
+	
 	dialogue_signal.emit(value)
 
 
@@ -329,6 +406,9 @@ func _on_variable_changed(variable_name : String, value):
 func _on_dialogue_ended():
 	if hide_on_dialogue_end: hide()
 	dialogue_ended.emit()
+	if gameManager != null:
+		gameManager.call("GotoScene", NextScene);
+	
 
 
 func _on_wait_finished():

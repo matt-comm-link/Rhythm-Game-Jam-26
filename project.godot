@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="Rhythm Game Jam 26"
-config/features=PackedStringArray("4.6", "Forward Plus")
+run/main_scene="uid://cgni16ft4o07k"
+config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 run/max_fps=1000
 config/icon="res://icon.svg"
 
@@ -33,6 +34,10 @@ window/vsync/vsync_mode=0
 [dotnet]
 
 project/assembly_name="Rhythm Game Jam 26"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_nodes/plugin.cfg")
 
 [input]
 
@@ -65,3 +70,4 @@ restart={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

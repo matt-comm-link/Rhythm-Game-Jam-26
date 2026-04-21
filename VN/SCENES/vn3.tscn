@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://dk6wqb2n66ehb"]
+
+[ext_resource type="Texture2D" uid="uid://dy7s7mk4owghq" path="res://VN/sprites/kodabedroom.png" id="1_7nuwm"]
+[ext_resource type="Script" uid="uid://ulwvlhvwmxgn" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="1_o8pne"]
+[ext_resource type="Texture2D" uid="uid://hn4jqb0y0rku" path="res://VN/sprites/Will Expressions/whimsyannoyed.png" id="2_7nuwm"]
+[ext_resource type="Texture2D" uid="uid://da2vaxuv8dqdn" path="res://VN/sprites/Will Expressions/whimsyannoyedDim.png" id="3_umn2n"]
+[ext_resource type="Texture2D" uid="uid://bflbcqfxorh6u" path="res://VN/sprites/Will Expressions/whimsyhappyDim.png" id="4_0i83r"]
+[ext_resource type="Texture2D" uid="uid://bx1xk27sd7j0p" path="res://VN/sprites/Will Expressions/whimsyneutralDim.png" id="5_unhmn"]
+[ext_resource type="Texture2D" uid="uid://bfhsdjlv2yuy4" path="res://VN/sprites/Will Expressions/whimsysadDim.png" id="6_cmm81"]
+[ext_resource type="Texture2D" uid="uid://cj7ntunfgab1w" path="res://VN/sprites/Will Expressions/whimsyhappy.png" id="7_etj28"]
+[ext_resource type="Texture2D" uid="uid://c73ycqdaipsdb" path="res://VN/sprites/Will Expressions/whimsyneutral.png" id="8_vcjja"]
+[ext_resource type="Texture2D" uid="uid://utguiwx62yaw" path="res://VN/sprites/Will Expressions/whimsysad.png" id="9_h1k0m"]
+[ext_resource type="Texture2D" uid="uid://dwgub5oxiuu8w" path="res://VN/sprites/Koda Expressions/kodaangry.png" id="10_oavcx"]
+[ext_resource type="Texture2D" uid="uid://x0qph4ky1jun" path="res://VN/sprites/Koda Expressions/kodacrying.png" id="11_qs27k"]
+[ext_resource type="Texture2D" uid="uid://rb0eicwaon5l" path="res://VN/sprites/Koda Expressions/kodaangryDim.png" id="12_30cpw"]
+[ext_resource type="Texture2D" uid="uid://hlmo6ycdlspd" path="res://VN/sprites/Koda Expressions/kodacryingDim.png" id="13_i0aog"]
+[ext_resource type="Texture2D" uid="uid://ds7f5gfhs7qg5" path="res://VN/sprites/Koda Expressions/kodagratefulDim.png" id="14_8htnp"]
+[ext_resource type="Texture2D" uid="uid://i3i7518bhokj" path="res://VN/sprites/Koda Expressions/kodahappyDim.png" id="15_f408d"]
+[ext_resource type="Texture2D" uid="uid://b2a38g8krxn6r" path="res://VN/sprites/Koda Expressions/kodaneutralDim.png" id="16_1kda0"]
+[ext_resource type="Texture2D" uid="uid://dmygpd3apvvis" path="res://VN/sprites/Koda Expressions/kodasurprisedDim.png" id="17_xlcg8"]
+[ext_resource type="Texture2D" uid="uid://ceo502r6p4ik3" path="res://VN/sprites/Koda Expressions/kodaunamusedDim.png" id="18_sct5i"]
+[ext_resource type="Texture2D" uid="uid://b4ibgid1mpoja" path="res://VN/sprites/Koda Expressions/kodaupsetDim.png" id="19_xyquo"]
+[ext_resource type="Texture2D" uid="uid://der8uh2snrdot" path="res://VN/sprites/Koda Expressions/kodagrateful.png" id="20_b7fji"]
+[ext_resource type="Texture2D" uid="uid://dhrngtlqbytev" path="res://VN/sprites/Koda Expressions/kodahappy.png" id="21_x3hk1"]
+[ext_resource type="Texture2D" uid="uid://4wjpw3di433n" path="res://VN/sprites/Koda Expressions/kodaneutral.png" id="22_e3o08"]
+[ext_resource type="Texture2D" uid="uid://bbty52walh6w8" path="res://VN/sprites/Koda Expressions/kodasurprised.png" id="23_4u63m"]
+[ext_resource type="Texture2D" uid="uid://b26fnr0fxa4ul" path="res://VN/sprites/Koda Expressions/kodaunamused.png" id="24_xkqym"]
+[ext_resource type="Texture2D" uid="uid://c2con7wf0ci4p" path="res://VN/sprites/Koda Expressions/kodaupset.png" id="25_8orix"]
+[ext_resource type="Resource" uid="uid://tvpuh2mhs3l" path="res://VN/SCENES/vn3.tres" id="26_o8pne"]
+[ext_resource type="Script" uid="uid://btab0dpjsijxk" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="27_tmvmc"]
+[ext_resource type="Script" uid="uid://c4gygr7keot8x" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="28_grhwk"]
+[ext_resource type="Script" uid="uid://bd8vbglciaa2k" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="29_hftcd"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_c6wh6"]
+script = ExtResource("27_tmvmc")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_pyhwf"]
+script = ExtResource("28_grhwk")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_fu5un"]
+script = ExtResource("29_hftcd")
+
+[node name="VN" type="Control" unique_id=316021697]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BGRect" type="TextureRect" parent="." unique_id=1245602688]
+z_index = -5
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7nuwm")
+expand_mode = 2
+
+[node name="DialogueBox" type="Panel" parent="." unique_id=20179451 node_paths=PackedStringArray("portraitWill", "portraitKoda", "bgRect")]
+visible = false
+layout_mode = 0
+offset_left = 644.0
+offset_right = 644.0
+offset_bottom = 743.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_o8pne")
+portraitWill = NodePath("../PortraitParent/Will")
+portraitKoda = NodePath("../PortraitParent/Koda")
+bgRect = NodePath("../BGRect")
+dictWill = Dictionary[String, Texture2D]({
+"annoyed": ExtResource("2_7nuwm"),
+"dimannoyed": ExtResource("3_umn2n"),
+"dimhappy": ExtResource("4_0i83r"),
+"dimneutral": ExtResource("5_unhmn"),
+"dimsad": ExtResource("6_cmm81"),
+"happy": ExtResource("7_etj28"),
+"neutral": ExtResource("8_vcjja"),
+"sad": ExtResource("9_h1k0m")
+})
+dictKoda = Dictionary[String, Texture2D]({
+"angry": ExtResource("10_oavcx"),
+"crying": ExtResource("11_qs27k"),
+"dimangry": ExtResource("12_30cpw"),
+"dimcrying": ExtResource("13_i0aog"),
+"dimgrateful": ExtResource("14_8htnp"),
+"dimhappy": ExtResource("15_f408d"),
+"dimneutral": ExtResource("16_1kda0"),
+"dimsurprised": ExtResource("17_xlcg8"),
+"dimunamused": ExtResource("18_sct5i"),
+"dimupset": ExtResource("19_xyquo"),
+"grateful": ExtResource("20_b7fji"),
+"happy": ExtResource("21_x3hk1"),
+"neutral": ExtResource("22_e3o08"),
+"surprised": ExtResource("23_4u63m"),
+"unamused": ExtResource("24_xkqym"),
+"upset": ExtResource("25_8orix")
+})
+willVisible = true
+kodaVisible = true
+bgVisible = true
+dictSFX = null
+data = ExtResource("26_o8pne")
+start_id = "0"
+hide_portrait = true
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_c6wh6"), SubResource("RichTextEffect_pyhwf"), SubResource("RichTextEffect_fu5un")])
+
+[node name="PortraitParent" type="HBoxContainer" parent="." unique_id=1184416367]
+z_index = -1
+custom_minimum_size = Vector2(640, 480)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Will" type="TextureRect" parent="PortraitParent" unique_id=1703662532]
+custom_minimum_size = Vector2(300, 500)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+texture = ExtResource("8_vcjja")
+expand_mode = 3
+stretch_mode = 4
+flip_h = true
+
+[node name="Koda" type="TextureRect" parent="PortraitParent" unique_id=541021941]
+custom_minimum_size = Vector2(300, 600)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+texture = ExtResource("23_4u63m")
+expand_mode = 3
+stretch_mode = 4

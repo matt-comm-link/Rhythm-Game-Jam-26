@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="CharacterList" format=3 uid="uid://bvvw7jpa5nu2q"]
+
+[ext_resource type="Script" uid="uid://0fpsr05yl1r0" path="res://addons/dialogue_nodes/objects/Character.gd" id="1_fhap8"]
+[ext_resource type="Script" uid="uid://c3s324o5oqkig" path="res://addons/dialogue_nodes/objects/CharacterList.gd" id="2_htje6"]
+
+[sub_resource type="Resource" id="Resource_fhap8"]
+script = ExtResource("1_fhap8")
+name = "neutral!Will"
+color = Color(0, 1, 0, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_htje6"]
+script = ExtResource("1_fhap8")
+name = "happy!Will"
+color = Color(0, 1, 0, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_3eoqb"]
+script = ExtResource("1_fhap8")
+name = "sad!Will"
+color = Color(0, 0.79607844, 0.6784314, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_a86rj"]
+script = ExtResource("1_fhap8")
+name = "annoyed!Will"
+color = Color(1, 1, 0, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_qw8ri"]
+script = ExtResource("1_fhap8")
+name = "neutral!Koda"
+color = Color(0, 1, 1, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_xomtd"]
+script = ExtResource("1_fhap8")
+name = "happy!Koda"
+color = Color(0, 1, 1, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_murrb"]
+script = ExtResource("1_fhap8")
+name = "unamused!Koda"
+color = Color(0, 0.2901961, 1, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_tvbhi"]
+script = ExtResource("1_fhap8")
+name = "upset!Koda"
+color = Color(0, 0.2901961, 1, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_uwvg0"]
+script = ExtResource("1_fhap8")
+name = "crying!Koda"
+color = Color(0, 0.2901961, 1, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_2p1nx"]
+script = ExtResource("1_fhap8")
+name = "surprised!Koda"
+color = Color(0, 1, 1, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_bnhnk"]
+script = ExtResource("1_fhap8")
+name = "grateful!Koda"
+color = Color(0, 1, 1, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[sub_resource type="Resource" id="Resource_rwb6w"]
+script = ExtResource("1_fhap8")
+name = "angry!Koda"
+color = Color(0.61960787, 0, 1, 1)
+metadata/_custom_type_script = "uid://0fpsr05yl1r0"
+
+[resource]
+script = ExtResource("2_htje6")
+characters = Array[ExtResource("1_fhap8")]([SubResource("Resource_fhap8"), SubResource("Resource_htje6"), SubResource("Resource_3eoqb"), SubResource("Resource_a86rj"), SubResource("Resource_qw8ri"), SubResource("Resource_xomtd"), SubResource("Resource_murrb"), SubResource("Resource_tvbhi"), SubResource("Resource_uwvg0"), SubResource("Resource_2p1nx"), SubResource("Resource_bnhnk"), SubResource("Resource_rwb6w")])
+metadata/_custom_type_script = "uid://c3s324o5oqkig"

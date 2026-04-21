@@ -1,0 +1,670 @@
+[gd_resource type="Resource" script_class="DialogueData" format=3 uid="uid://dpcuk27pjyobx"]
+
+[ext_resource type="Script" uid="uid://5jev82h3htm" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_y1sym"]
+
+[resource]
+script = ExtResource("1_y1sym")
+starts = {
+"0": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(-45.24901, 167.88799),
+"start_id": "0"
+},
+&"1_1": {
+"dialogue": "Why do I bother trying?  
+",
+"offset": Vector2(420, 80),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(500, 459.99988),
+"speaker": ""
+},
+&"1_10": {
+"dialogue": "concerning sounds",
+"offset": Vector2(4920, 480),
+"options": {
+0: {
+"condition": {},
+"link": &"1_9",
+"text": ""
+}
+},
+"size": Vector2(420, 340),
+"speaker": ""
+},
+&"1_11": {
+"dialogue": "even more concerning sounds",
+"offset": Vector2(5974.8223, 681.1452),
+"options": {
+0: {
+"condition": {},
+"link": &"1_12",
+"text": ""
+}
+},
+"size": Vector2(440, 320),
+"speaker": ""
+},
+&"1_12": {
+"dialogue": "Nononono, come on, don’t break on me now!!
+",
+"offset": Vector2(6587.0176, 882.0199),
+"options": {
+0: {
+"condition": {},
+"link": &"1_13",
+"text": ""
+}
+},
+"size": Vector2(360, 340),
+"speaker": 11
+},
+&"1_13": {
+"dialogue": "breaking sounds",
+"offset": Vector2(7020, 920),
+"options": {
+0: {
+"condition": {},
+"link": &"1_14",
+"text": ""
+}
+},
+"size": Vector2(340, 320),
+"speaker": ""
+},
+&"1_14": {
+"dialogue": "COME ON!!",
+"offset": Vector2(7536.467, 1105.2942),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": ""
+}
+},
+"size": Vector2(300.00098, 251),
+"speaker": 11
+},
+&"1_15": {
+"dialogue": "…",
+"offset": Vector2(7960, 1200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_16",
+"text": ""
+}
+},
+"size": Vector2(440.00098, 360),
+"speaker": 6
+},
+&"1_16": {
+"dialogue": "What the hell.  Why me?",
+"offset": Vector2(8560, 1320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_17",
+"text": ""
+}
+},
+"size": Vector2(440, 400),
+"speaker": 7
+},
+&"1_17": {
+"dialogue": "I just wanted to…",
+"offset": Vector2(9127.509, 1546.4901),
+"options": {
+0: {
+"condition": {},
+"link": &"1_18",
+"text": ""
+}
+},
+"size": Vector2(420, 400.00012),
+"speaker": 8
+},
+&"1_18": {
+"dialogue": "bzzzt",
+"offset": Vector2(9700, 1620),
+"options": {
+0: {
+"condition": {},
+"link": &"1_19",
+"text": ""
+}
+},
+"size": Vector2(460, 379.99988),
+"speaker": "phone"
+},
+&"1_19": {
+"dialogue": "Will…? I haven’t talked to them in ages…",
+"offset": Vector2(10340, 1680),
+"options": {
+0: {
+"condition": {},
+"link": &"1_20",
+"text": ""
+}
+},
+"size": Vector2(440, 360),
+"speaker": 4
+},
+&"1_2": {
+"dialogue": "It’s been a long time since I’ve actually enjoyed making music.  It’s not fun anymore, yet I keep trying to make it work. ",
+"offset": Vector2(1000, 180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": Vector2(420, 500),
+"speaker": ""
+},
+&"1_20": {
+"dialogue": "I guess I haven’t really talked to anyone in ages…",
+"offset": Vector2(10880, 1740),
+"options": {
+0: {
+"condition": {},
+"link": &"1_21",
+"text": ""
+}
+},
+"size": Vector2(300, 380.00012),
+"speaker": 7
+},
+&"1_21": {
+"dialogue": "They’re good with computers though, maybe they can help.",
+"offset": Vector2(11240, 1920),
+"options": {
+0: {
+"condition": {},
+"link": &"3_2",
+"text": ""
+}
+},
+"size": Vector2(419.99902, 380),
+"speaker": 4
+},
+&"1_22": {
+"dialogue": "...",
+"offset": Vector2(11980, 2000),
+"options": {
+0: {
+"condition": {},
+"link": &"3_3",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": ""
+},
+&"1_23": {
+"dialogue": "Door’s unlocked",
+"offset": Vector2(12720, 1980),
+"options": {
+0: {
+"condition": {},
+"link": &"3_4",
+"text": ""
+}
+},
+"size": Vector2(339.99902, 320),
+"speaker": 6
+},
+&"1_24": {
+"dialogue": "Hey Koda!  How’ve you been?  I feel like we haven’t talked in forever!",
+"offset": Vector2(13400, 1980),
+"options": {
+0: {
+"condition": {},
+"link": &"1_25",
+"text": ""
+}
+},
+"size": Vector2(380, 380),
+"speaker": 1
+},
+&"1_25": {
+"dialogue": " Ah, yeah, sorry about that.  Life’s been…busy.
+",
+"offset": Vector2(13840, 2000),
+"options": {
+0: {
+"condition": {},
+"link": &"1_26",
+"text": ""
+}
+},
+"size": Vector2(340, 320),
+"speaker": 9
+},
+&"1_26": {
+"dialogue": "I get ya, make sure you’re looking after yourself though.  Can’t spend all of your time working!
+",
+"offset": Vector2(14260, 1980),
+"options": {
+0: {
+"condition": {},
+"link": &"1_27",
+"text": ""
+}
+},
+"size": Vector2(340, 340),
+"speaker": 0
+},
+&"1_27": {
+"dialogue": "Right…
+",
+"offset": Vector2(14640, 1980),
+"options": {
+0: {
+"condition": {},
+"link": &"1_28",
+"text": ""
+}
+},
+"size": Vector2(300, 251),
+"speaker": 4
+},
+&"1_28": {
+"dialogue": "So, I’m guessing this is the problem child over here. (referring to the computer)",
+"offset": Vector2(15025.406, 2054.3613),
+"options": {
+0: {
+"condition": {},
+"link": &"1_29",
+"text": ""
+}
+},
+"size": Vector2(340, 380),
+"speaker": 0
+},
+&"1_29": {
+"dialogue": "Yeah, I don’t know what happened.  It just froze and then everything kind of just broke.  I tried to look it over while you were on your way over but it’s like the whole thing just…collapsed.",
+"offset": Vector2(15400, 2060),
+"options": {
+0: {
+"condition": {},
+"link": &"1_30",
+"text": ""
+}
+},
+"size": Vector2(440, 400),
+"speaker": 7
+},
+&"1_3": {
+"dialogue": " Am I just…chasing the old feeling I once had?  Or am I just afraid that if I let it go, I won’t have anything left…?",
+"offset": Vector2(1640, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"3_1",
+"text": ""
+}
+},
+"size": Vector2(460, 400),
+"speaker": ""
+},
+&"1_30": {
+"dialogue": "Hmm…",
+"offset": Vector2(15880, 2080),
+"options": {
+0: {
+"condition": {},
+"link": &"1_31",
+"text": ""
+}
+},
+"size": Vector2(340, 340),
+"speaker": 3
+},
+&"1_31": {
+"dialogue": "Might have been overburdened by something, but nothing a little elbow grease and imagination can’t solve!",
+"offset": Vector2(16280, 2080),
+"options": {
+0: {
+"condition": {},
+"link": &"1_32",
+"text": ""
+}
+},
+"size": Vector2(380, 360),
+"speaker": 3
+},
+&"1_32": {
+"dialogue": "Imagination…?
+",
+"offset": Vector2(16700, 2100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_33",
+"text": ""
+}
+},
+"size": Vector2(380, 340),
+"speaker": 9
+},
+&"1_33": {
+"dialogue": "Well, sure!  Sometimes the wackiest ideas are the right ones!",
+"offset": Vector2(17100, 2100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_34",
+"text": ""
+}
+},
+"size": Vector2(340, 340),
+"speaker": 0
+},
+&"1_34": {
+"dialogue": "If you say so.
+",
+"offset": Vector2(17480, 2100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_35",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 6
+},
+&"1_35": {
+"dialogue": "I do say so! ",
+"offset": Vector2(17800, 2100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_36",
+"text": ""
+}
+},
+"size": Vector2(400, 380),
+"speaker": 1
+},
+&"1_36": {
+"dialogue": "Now let’s see what I’ve got to work with here.  I can already tell something’s gone very wrong.",
+"offset": Vector2(18240, 2100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_37",
+"text": ""
+}
+},
+"size": Vector2(340, 380),
+"speaker": 0
+},
+&"1_37": {
+"dialogue": "What gave it away? The blank screen?  The lack of any lights or fans whirring?",
+"offset": Vector2(18600, 2100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_38",
+"text": ""
+}
+},
+"size": Vector2(320, 360),
+"speaker": 6
+},
+&"1_38": {
+"dialogue": "It was mostly the smokey smell.
+",
+"offset": Vector2(18940, 2120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_39",
+"text": ""
+}
+},
+"size": Vector2(320, 340),
+"speaker": 0
+},
+&"1_39": {
+"dialogue": "Smoke??
+",
+"offset": Vector2(19280, 2120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_40",
+"text": ""
+}
+},
+"size": Vector2(340, 280),
+"speaker": 9
+},
+&"1_4": {
+"dialogue": "Ugh.",
+"offset": Vector2(2520, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": ""
+}
+},
+"size": Vector2(380, 320),
+"speaker": 6
+},
+&"1_40": {
+"dialogue": "Don’t worry, nothing’s on fire.",
+"offset": Vector2(19640, 2140),
+"options": {
+0: {
+"condition": {},
+"link": &"1_41",
+"text": ""
+}
+},
+"size": Vector2(320, 320),
+"speaker": 0
+},
+&"1_41": {
+"dialogue": "Yet.
+",
+"offset": Vector2(19980, 2160),
+"options": {
+0: {
+"condition": {},
+"link": &"1_42",
+"text": ""
+}
+},
+"size": Vector2(380, 320),
+"speaker": 2
+},
+&"1_42": {
+"dialogue": "...",
+"offset": Vector2(20400, 2160),
+"options": {
+0: {
+"condition": {},
+"link": &"1_43",
+"text": ""
+}
+},
+"size": Vector2(300, 320),
+"speaker": 6
+},
+&"1_43": {
+"dialogue": "Hey Koda, do you think you could play something for me while I work?  It’s been so long since I’ve been able to hear you play live!",
+"offset": Vector2(20740, 2160),
+"options": {
+0: {
+"condition": {},
+"link": &"1_44",
+"text": ""
+}
+},
+"size": Vector2(340, 380),
+"speaker": 0
+},
+&"1_44": {
+"dialogue": "Huh?? I don’t think that’s a very good idea.
+",
+"offset": Vector2(21100, 2160),
+"options": {
+0: {
+"condition": {},
+"link": &"1_45",
+"text": ""
+}
+},
+"size": Vector2(300, 360),
+"speaker": 7
+},
+&"1_45": {
+"dialogue": "Please? I admit it helps to have background music when I work and since your computer is worse for wear I thought maybe…
+",
+"offset": Vector2(21420, 2180),
+"options": {
+0: {
+"condition": {},
+"link": &"3_5",
+"text": ""
+}
+},
+"size": Vector2(360, 400),
+"speaker": 2
+},
+&"1_46": {
+"dialogue": "(Couldn’t you just use your phone?)
+",
+"offset": Vector2(21900, 2180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_47",
+"text": ""
+}
+},
+"size": Vector2(360, 380),
+"speaker": 6
+},
+&"1_47": {
+"dialogue": "Fine, okay.  Let me see if I can at least get my instruments to work.",
+"offset": Vector2(22300, 2200),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(420, 380),
+"speaker": ""
+},
+&"1_5": {
+"dialogue": "This sounds awful.",
+"offset": Vector2(2940, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": ""
+}
+},
+"size": Vector2(360, 280),
+"speaker": 7
+},
+&"1_6": {
+"dialogue": "It’s been three months since I’ve put anything out though, I need to at least show some signs of life out there…but I absolutely hate this.
+",
+"offset": Vector2(3400, 340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_7",
+"text": ""
+}
+},
+"size": Vector2(440, 380.00012),
+"speaker": 7
+},
+&"1_7": {
+"dialogue": "Whatever, nothing I make sounds great anyway, might as well upload it–
+",
+"offset": Vector2(3960, 380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_8",
+"text": ""
+}
+},
+"size": Vector2(460, 360),
+"speaker": 6
+},
+&"1_8": {
+"dialogue": "Huh?
+",
+"offset": Vector2(4460, 400),
+"options": {
+0: {
+"condition": {},
+"link": &"1_10",
+"text": ""
+}
+},
+"size": Vector2(420.00195, 340.00012),
+"speaker": 9
+},
+&"1_9": {
+"dialogue": "Oh come on, don’t freeze on me now.
+",
+"offset": Vector2(5420, 400),
+"options": {
+0: {
+"condition": {},
+"link": &"1_11",
+"text": ""
+}
+},
+"size": Vector2(420, 300),
+"speaker": 9
+},
+&"3_1": {
+"link": &"1_4",
+"offset": Vector2(2280, 420),
+"signalValue": "ShowKoda"
+},
+&"3_2": {
+"link": &"1_22",
+"offset": Vector2(11740, 2100),
+"signalValue": "HideKoda"
+},
+&"3_3": {
+"link": &"1_23",
+"offset": Vector2(12480, 2160),
+"signalValue": "ShowKoda"
+},
+&"3_4": {
+"link": &"1_24",
+"offset": Vector2(13160, 2160),
+"signalValue": "ShowWill"
+},
+&"3_5": {
+"link": &"1_46",
+"offset": Vector2(21838.25, 2619.9478),
+"signalValue": "HideWill"
+}
+}
+characters = "res://VN/characters.tres"
