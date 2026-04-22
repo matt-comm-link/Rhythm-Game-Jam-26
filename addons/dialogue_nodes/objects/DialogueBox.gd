@@ -371,7 +371,7 @@ func _on_dialogue_signal(value : String):
 	if gameManager == null:
 		return;
 	if value.contains(("SFX")):
-		sfxPlayer.stream = dictSFX[value];
+		sfxPlayer.stream = dictSFX[value.replace("SFX", "")];
 		sfxPlayer.play();
 		
 		
