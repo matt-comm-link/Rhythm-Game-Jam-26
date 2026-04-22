@@ -36,7 +36,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00006, 320),
+"size": Vector2(300.0001, 320),
 "speaker": 3
 },
 &"1_3": {
@@ -50,7 +50,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 300),
+"size": Vector2(320.00012, 300),
 "speaker": 7
 },
 &"1_4": {
@@ -64,7 +64,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 359.99997),
+"size": Vector2(319.99994, 360),
 "speaker": 0
 },
 &"1_5": {
@@ -78,7 +78,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 320),
+"size": Vector2(320.00006, 320),
 "speaker": 4
 }
 }
