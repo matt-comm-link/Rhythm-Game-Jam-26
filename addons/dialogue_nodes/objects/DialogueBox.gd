@@ -337,7 +337,7 @@ func _on_dialogue_processed(speaker : Variant, dialogue : String, options : Arra
 		portraitWill.visible = willVisible;
 		portraitKoda.visible = kodaVisible;	
 	elif speaker is String:
-		speaker_label.text = speaker.split("!")[1];
+		speaker_label.text = speaker;
 		speaker_label.modulate = Color.WHITE
 		portrait.hide()
 	
@@ -390,6 +390,7 @@ func _on_dialogue_signal(value : String):
 
 	if value == "ShowBG":
 		bgVisible = true;
+		print("ShowBG")
 		bgRect.show();
 	if value == "HideBG":
 		bgVisible = false;

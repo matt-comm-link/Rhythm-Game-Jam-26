@@ -2,9 +2,26 @@
 
 [ext_resource type="PackedScene" uid="uid://dv2yxsk2pn2j" path="res://rhythm_minigame/main/rhythm_game.tscn" id="1_bpakj"]
 [ext_resource type="AudioStream" uid="uid://dt3jvmfdddep4" path="res://music/Koda_main.mp3" id="2_614qr"]
+[ext_resource type="Texture2D" uid="uid://bbty52walh6w8" path="res://VN/sprites/Koda Expressions/kodasurprised.png" id="2_vyxo6"]
 [ext_resource type="AudioStream" uid="uid://dx2516n4td43x" path="res://rhythm_minigame/sound_effects/Koda_success.mp3" id="3_1kymv"]
+[ext_resource type="Texture2D" uid="uid://dwgub5oxiuu8w" path="res://VN/sprites/Koda Expressions/kodaangry.png" id="3_xyudq"]
+[ext_resource type="Texture2D" uid="uid://dy7s7mk4owghq" path="res://VN/sprites/kodabedroom.png" id="4_6qtj6"]
+[ext_resource type="Texture2D" uid="uid://dhrngtlqbytev" path="res://VN/sprites/Koda Expressions/kodahappy.png" id="5_glvoc"]
+[ext_resource type="Texture2D" uid="uid://4wjpw3di433n" path="res://VN/sprites/Koda Expressions/kodaneutral.png" id="6_r6oht"]
 
-[node name="Main" unique_id=1552747287 instance=ExtResource("1_bpakj")]
+[node name="Main" unique_id=1552747287 node_paths=PackedStringArray("characterPortrait", "hitLabel") instance=ExtResource("1_bpakj")]
+characterPortrait = NodePath("Control/Chara")
+characterFaces = Dictionary[String, Texture2D]({
+"Good": ExtResource("6_r6oht"),
+"Miss...": ExtResource("3_xyudq"),
+"Perfect!": ExtResource("5_glvoc"),
+"Too Early...": ExtResource("2_vyxo6"),
+"Unknown": ExtResource("6_r6oht")
+})
+hitLabel = NodePath("Control/hitLabel")
+targethitRate = 60.0
+successLevel = 4
+failLevel = 3
 
 [node name="Conductor" parent="." index="1" unique_id=630216901]
 bpm = 100.0
@@ -19,17 +36,66 @@ stream = ExtResource("3_1kymv")
 [node name="Notes" parent="." index="4" unique_id=555600113]
 chart = 2
 
-[node name="UseFilteredCheckBox" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="0" unique_id=161184992]
+[node name="BG" type="TextureRect" parent="Control" parent_id_path=PackedInt32Array(1641181851) index="0" unique_id=1121186053]
+modulate = Color(0.61, 0.61, 0.61, 1)
+z_index = -5
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_6qtj6")
+expand_mode = 2
+
+[node name="hitLabel" type="RichTextLabel" parent="Control" parent_id_path=PackedInt32Array(1641181851) index="1" unique_id=1283315144]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_font_sizes/normal_font_size = 30
+text = "target: 60%
+score: 0%"
+fit_content = true
+
+[node name="Chara" type="TextureRect" parent="Control" parent_id_path=PackedInt32Array(1641181851) index="2" unique_id=707768394]
+z_index = -5
+custom_minimum_size = Vector2(400, 500)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+texture = ExtResource("6_r6oht")
+expand_mode = 2
+stretch_mode = 4
+flip_h = true
+
+[node name="SettingsVBox" parent="Control" parent_id_path=PackedInt32Array(1641181851) index="4" unique_id=1091856933]
 visible = false
 
-[node name="Control" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="1" unique_id=1339950176]
+[node name="UseFilteredCheckBox" parent="Control/SettingsVBox" index="0" unique_id=161184992]
 visible = false
 
-[node name="ScrollSpeedInstructionsLabel" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="6" unique_id=575341510]
+[node name="Control" parent="Control/SettingsVBox" index="1" unique_id=1339950176]
 visible = false
 
-[node name="ScrollSpeedHBox" parent="Control/SettingsVBox" parent_id_path=PackedInt32Array(1091856933) index="7" unique_id=1667676722]
+[node name="ScrollSpeedInstructionsLabel" parent="Control/SettingsVBox" index="6" unique_id=575341510]
 visible = false
 
-[node name="ChartVBox" parent="Control" parent_id_path=PackedInt32Array(1641181851) index="3" unique_id=1345356978]
+[node name="ScrollSpeedHBox" parent="Control/SettingsVBox" index="7" unique_id=1667676722]
+visible = false
+
+[node name="HitErrorLabel" parent="Control/StatsVBox" parent_id_path=PackedInt32Array(525050292) index="3" unique_id=1274361653]
+visible = false
+
+[node name="ChartVBox" parent="Control" parent_id_path=PackedInt32Array(1641181851) index="6" unique_id=1345356978]
 visible = false

@@ -2,6 +2,17 @@
 
 [ext_resource type="Script" uid="uid://co3nlglrxt8lf" path="res://VN/VnWindowManager.cs" id="1_s6kcp"]
 [ext_resource type="PackedScene" uid="uid://bkxnx2akyp3mq" path="res://VN/SCENES/vn1.tscn" id="2_ywxbi"]
+[ext_resource type="PackedScene" uid="uid://24a7m43205mw" path="res://rhythm_minigame/main/koda_song.tscn" id="3_hiqgx"]
+[ext_resource type="PackedScene" uid="uid://4as4f3jvfpox" path="res://VN/SCENES/vn2.tscn" id="4_4mv6r"]
+[ext_resource type="PackedScene" uid="uid://dk6wqb2n66ehb" path="res://VN/SCENES/vn3.tscn" id="5_jpnun"]
+[ext_resource type="PackedScene" uid="uid://bni7w0ew8mktu" path="res://rhythm_minigame/main/will_song.tscn" id="6_bgbt3"]
+[ext_resource type="PackedScene" uid="uid://bs4y88kcdja6o" path="res://VN/SCENES/vn4.tscn" id="7_sv2qf"]
+[ext_resource type="PackedScene" uid="uid://qpqct54v2fj1" path="res://VN/SCENES/vn5.tscn" id="8_pmd5c"]
+[ext_resource type="PackedScene" uid="uid://bxvpq8ciaa0va" path="res://rhythm_minigame/main/combined_song.tscn" id="9_syer7"]
+[ext_resource type="PackedScene" uid="uid://c73ah56m01y2h" path="res://VN/SCENES/vn6.tscn" id="10_glk4i"]
+[ext_resource type="PackedScene" uid="uid://c7jcl1cl57po3" path="res://VN/SCENES/vn7.tscn" id="11_ul6yv"]
+[ext_resource type="PackedScene" uid="uid://cwq7vrp0efx1p" path="res://menus/menu.tscn" id="12_4mv6r"]
+[ext_resource type="PackedScene" uid="uid://nipte4rr111n" path="res://menus/credits.tscn" id="13_jpnun"]
 
 [node name="VnWindow" type="Control" unique_id=1526143931]
 layout_mode = 3
@@ -11,6 +22,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_s6kcp")
+scenes = Array[PackedScene]([ExtResource("12_4mv6r"), ExtResource("2_ywxbi"), ExtResource("3_hiqgx"), ExtResource("4_4mv6r"), ExtResource("5_jpnun"), ExtResource("6_bgbt3"), ExtResource("7_sv2qf"), ExtResource("8_pmd5c"), ExtResource("9_syer7"), ExtResource("10_glk4i"), ExtResource("11_ul6yv"), ExtResource("13_jpnun")])
 
-[node name="VN" parent="." unique_id=316021697 instance=ExtResource("2_ywxbi")]
+[node name="Menu" parent="." unique_id=498713377 instance=ExtResource("12_4mv6r")]
 layout_mode = 1

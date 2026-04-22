@@ -1,9 +1,23 @@
 extends Node2D
 
+
+@export var characterPortrait : TextureRect
+
+@export var characterFaces : Dictionary[String, Texture2D]
+
+@export var hitLabel : RichTextLabel
+
+var hitRate : float
+@export var targethitRate: float
+@export var successLevel : int
+@export var failLevel : int
+
 class NoteHitData:
 	var beat_time: float
 	var type: Enums.HitType
 	var error: float
+
+
 
 	@warning_ignore("shadowed_variable")
 	func _init(beat_time: float, type: Enums.HitType, error: float) -> void:
@@ -37,12 +51,17 @@ func _ready() -> void:
 	$Conductor.play()
 	$Metronome.start()
 
-
+	
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed(&"restart"):
 		_completed = false;
 		get_tree().reload_current_scene()
 	elif Input.is_action_just_pressed(&"main_key") && _completed:
+		push_warning("Completed level")
+		if hitRate >= targethitRate:
+			get_parent().call("GotoScene", successLevel)
+		else:
+			get_parent().call("GotoScene", failLevel)
 		rhythm_game_completed.emit();
 	$Control/ErrorGraphVBox/CenterContainer/TimeGraph.queue_redraw()
 
@@ -56,7 +75,13 @@ func _update_stats(play_stats: PlayStats) -> void:
 		$Control/StatsVBox/HitErrorLabel.text = "Avg Error: %+.1f ms (Early)" % hit_error_ms
 	else:
 		$Control/StatsVBox/HitErrorLabel.text = "Avg Error: %+.1f ms (Late)" % hit_error_ms
+	
+	hitRate = (float)(play_stats.good_count + play_stats.perfect_count) / (play_stats.good_count + play_stats.miss_count + play_stats.perfect_count)
+	print("hit rate is " + str(hitRate) + "/1")
 
+	hitRate *= 100
+	print("hit rate is " + str(hitRate) + "%")
+	hitLabel.text = "Target: " + str(targethitRate) + "%\nScore: " + str(snapped(hitRate, 1)) + "%"
 
 func _update_filter_state(use_filter: bool) -> void:
 	GlobalSettings.use_filtered_playback = use_filter
@@ -67,20 +92,24 @@ func _update_filter_state(use_filter: bool) -> void:
 
 
 func _hit_type_to_string(hit_type: Enums.HitType) -> String:
+	var result : String = "Unknown"
 	match hit_type:
 		Enums.HitType.MISS_EARLY:
-			return "Too Early..."
+			result = "Too Early..."
 		Enums.HitType.GOOD_EARLY:
-			return "Good"
+			result = "Good"
 		Enums.HitType.PERFECT:
-			return "Perfect!"
+			result = "Perfect!"
 		Enums.HitType.GOOD_LATE:
-			return "Good"
+			result = "Good"
 		Enums.HitType.MISS_LATE:
-			return "Miss..."
+			result = "Miss..."
 		_:
 			assert(false, "Unknown HitType: %s" % hit_type)
-			return "Unknown"
+			result = "Unknown"
+			
+	characterPortrait.texture = characterFaces[result]
+	return result
 
 
 func _on_use_filtered_check_box_toggled(toggled_on: bool) -> void:
@@ -126,6 +155,7 @@ func _on_play_stats_updated(play_stats: PlayStats) -> void:
 
 func _on_song_finished(play_stats: PlayStats) -> void:
 	$Control/SongCompleteLabel.show()
+	_completed = true;
 	_update_stats(play_stats)
 
 

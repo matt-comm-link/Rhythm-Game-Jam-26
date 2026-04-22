@@ -60,15 +60,53 @@ grow_vertical = 2
 texture = ExtResource("1_2db3f")
 expand_mode = 2
 
+[node name="PortraitParent" type="HBoxContainer" parent="." unique_id=1184416367]
+z_index = -1
+custom_minimum_size = Vector2(640, 480)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Koda" type="TextureRect" parent="PortraitParent" unique_id=541021941]
+visible = false
+custom_minimum_size = Vector2(300, 600)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+texture = ExtResource("7_s1v16")
+expand_mode = 3
+stretch_mode = 4
+flip_h = true
+
+[node name="Will" type="TextureRect" parent="PortraitParent" unique_id=1703662532]
+visible = false
+custom_minimum_size = Vector2(300, 500)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+texture = ExtResource("6_lme1c")
+expand_mode = 3
+stretch_mode = 4
+
 [node name="DialogueBox" type="Panel" parent="." unique_id=20179451 node_paths=PackedStringArray("portraitWill", "portraitKoda", "bgRect")]
 visible = false
-layout_mode = 0
-offset_left = 644.0
-offset_right = 644.0
-offset_bottom = 743.0
+custom_minimum_size = Vector2(400, 200)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -100.0
+offset_right = 200.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("1_v878a")
+NextScene = 2
 portraitWill = NodePath("../PortraitParent/Will")
 portraitKoda = NodePath("../PortraitParent/Koda")
 bgRect = NodePath("../BGRect")
@@ -100,39 +138,6 @@ dictKoda = Dictionary[String, Texture2D]({
 "unamused": ExtResource("16_2db3f"),
 "upset": ExtResource("18_cgjia")
 })
-bgVisible = null
-dictSFX = null
 data = ExtResource("26_5vc62")
 start_id = "0"
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_c6wh6"), SubResource("RichTextEffect_pyhwf"), SubResource("RichTextEffect_fu5un")])
-
-[node name="PortraitParent" type="HBoxContainer" parent="." unique_id=1184416367]
-z_index = -1
-custom_minimum_size = Vector2(640, 480)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Koda" type="TextureRect" parent="PortraitParent" unique_id=541021941]
-visible = false
-custom_minimum_size = Vector2(300, 600)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 8
-texture = ExtResource("7_s1v16")
-expand_mode = 3
-stretch_mode = 4
-flip_h = true
-
-[node name="Will" type="TextureRect" parent="PortraitParent" unique_id=1703662532]
-visible = false
-custom_minimum_size = Vector2(300, 500)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 8
-texture = ExtResource("6_lme1c")
-expand_mode = 3
-stretch_mode = 4
