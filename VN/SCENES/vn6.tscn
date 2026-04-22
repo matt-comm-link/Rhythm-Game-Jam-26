@@ -27,9 +27,14 @@
 [ext_resource type="Texture2D" uid="uid://b26fnr0fxa4ul" path="res://VN/sprites/Koda Expressions/kodaunamused.png" id="24_mtxkt"]
 [ext_resource type="Texture2D" uid="uid://c2con7wf0ci4p" path="res://VN/sprites/Koda Expressions/kodaupset.png" id="25_eiioc"]
 [ext_resource type="Resource" uid="uid://d0dx8b65c7cd0" path="res://VN/SCENES/vn6.tres" id="26_22jta"]
+[ext_resource type="AudioStream" uid="uid://cfyawenadq54u" path="res://VN/SFX/phone_chrip(1).mp3" id="27_ld8ge"]
 [ext_resource type="Script" uid="uid://btab0dpjsijxk" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="27_u4t71"]
+[ext_resource type="AudioStream" uid="uid://bvt8rdkoufpc" path="res://VN/SFX/phone_chrip.mp3" id="28_4agt6"]
 [ext_resource type="Script" uid="uid://c4gygr7keot8x" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="28_51nnc"]
 [ext_resource type="Script" uid="uid://bd8vbglciaa2k" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="29_h5eyv"]
+[ext_resource type="AudioStream" uid="uid://bain65an4ww3i" path="res://VN/SFX/computer_noise.mp3" id="29_ks3dl"]
+[ext_resource type="AudioStream" uid="uid://d00oef8pdnvu0" path="res://VN/SFX/computer_noise_bad.mp3" id="30_wr73f"]
+[ext_resource type="AudioStream" uid="uid://diosek126it38" path="res://VN/SFX/computer_noise_crash.mp3" id="31_4sw5a"]
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_c6wh6"]
 script = ExtResource("27_u4t71")
@@ -138,6 +143,13 @@ dictKoda = Dictionary[String, Texture2D]({
 willVisible = true
 kodaVisible = true
 bgVisible = true
+dictSFX = Dictionary[String, AudioStream]({
+"Computer": ExtResource("29_ks3dl"),
+"ComputerBad": ExtResource("30_wr73f"),
+"ComputerVeryBad": ExtResource("31_4sw5a"),
+"PhoneKoda": ExtResource("27_ld8ge"),
+"PhoneWill": ExtResource("28_4agt6")
+})
 data = ExtResource("26_22jta")
 start_id = "0"
 hide_portrait = true

@@ -23,7 +23,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 251.00002),
+"size": Vector2(300, 291),
 "speaker": 0
 },
 &"1_10": {
@@ -47,7 +47,7 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": &"1_12",
+"link": &"3_1",
 "text": ""
 }
 },
@@ -79,7 +79,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 379.99997),
+"size": Vector2(320, 380),
 "speaker": 1
 },
 &"1_14": {
@@ -120,7 +120,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 280),
+"size": Vector2(300, 291),
 "speaker": 1
 },
 &"1_3": {
@@ -218,6 +218,11 @@ nodes = {
 },
 "size": Vector2(400, 400),
 "speaker": 4
+},
+&"3_1": {
+"link": &"1_12",
+"offset": Vector2(4282.74, 793.35004),
+"signalValue": "SFXPhoneWill"
 }
 }
 characters = "res://VN/characters.tres"
