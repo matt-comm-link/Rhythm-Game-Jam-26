@@ -74,11 +74,11 @@ bbcode_enabled = true
 text = "A game for the Autistic Creative Festival Game Jam 2026
 [font_size=20]Developed by Team 4: 
 [font_size=11]in alphabetical order
-[font_size=14]Kieshells - Script, Art (Koda), 
-Kitty McTophat - Rhythm Game Development, 
-Mattihase - Visual Novel Development, 
-Sandwich - Composer, SFX, 
-Stefan - Scenario, Design, 
+[font_size=14]Kieshells - Script, Art (Koda)
+Kitty McTophat - Rhythm Game Development
+Mattihase - Visual Novel Development
+Sandwich247 - Composer, SFX
+Stefan - Scenario, Design
 Wickflix - Art(Will)
 "
 fit_content = true
@@ -131,5 +131,10 @@ instagram.com/yuta_ptv_jp/"
 fit_content = true
 autowrap_mode = 0
 horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="." unique_id=817657813]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="GotoStart"]
