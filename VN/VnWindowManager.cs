@@ -11,9 +11,12 @@ public partial class VnWindowManager : Control
     public int currentScene;
 
     Node CurrentScene;
+   
+    bool Fullscreen = false;
 
     public override void _Ready()
     {
+        DisplayServer.WindowSetTitle("Half Measures");
         CurrentScene = (Node)GetChild(0);
     }
 
@@ -74,6 +77,14 @@ public partial class VnWindowManager : Control
             }
             
         }
+        if(@event is InputEventKey keyf)
+            if(keyf.Pressed && keyf.Keycode == Key.F11)
+                Fullscreen = !Fullscreen;
+        if(Fullscreen)
+           DisplayServer.WindowSetMode(DisplayServer.WindowMode.Fullscreen);
+        else
+            DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
+ 
     }
 
 

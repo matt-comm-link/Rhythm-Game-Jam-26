@@ -77,5 +77,10 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_y8e4h")
 text = "Credits"
 
+[node name="Control" type="Control" parent="." unique_id=1356164438]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="GotoGame"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="GotoCredits"]
