@@ -74,22 +74,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Will" type="TextureRect" parent="PortraitParent" unique_id=1703662532]
-custom_minimum_size = Vector2(300, 500)
+[node name="Koda" type="TextureRect" parent="PortraitParent" unique_id=541021941]
+custom_minimum_size = Vector2(300, 600)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 2
 size_flags_vertical = 8
-texture = ExtResource("7_k78fi")
+texture = ExtResource("21_7q8ml")
 expand_mode = 3
 stretch_mode = 4
 flip_h = true
 
-[node name="Koda" type="TextureRect" parent="PortraitParent" unique_id=541021941]
-custom_minimum_size = Vector2(300, 600)
+[node name="Will" type="TextureRect" parent="PortraitParent" unique_id=1703662532]
+custom_minimum_size = Vector2(300, 500)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 10
 size_flags_vertical = 8
-texture = ExtResource("21_7q8ml")
+texture = ExtResource("7_k78fi")
 expand_mode = 3
 stretch_mode = 4
 
