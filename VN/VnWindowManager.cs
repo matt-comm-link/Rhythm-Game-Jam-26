@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 
 public partial class VnWindowManager : Control
@@ -9,7 +10,13 @@ public partial class VnWindowManager : Control
     [Export]
     public int currentScene;
 
-    Control CurrentScene;
+    Node CurrentScene;
+
+    public override void _Ready()
+    {
+        CurrentScene = (Node)GetChild(0);
+    }
+
 
     public void GotoScene(int scene)
     {
@@ -18,13 +25,14 @@ public partial class VnWindowManager : Control
             //this is so fucking confusing to read
             CurrentScene.QueueFree();
             currentScene = scene;
-            CurrentScene = (Control)scenes[currentScene].Instantiate();
+            CurrentScene = (Node)scenes[currentScene].Instantiate();
             AddChild(CurrentScene);
 
             //if VN scene
             if(CurrentScene.GetChildCount() == 3)
             {
-                CurrentScene.GetChild(1).Call("start", 0);
+                GD.Print("dialog box is " + CurrentScene.GetChild(2).Name + "?");
+                CurrentScene.GetChild(2).Call("start");
             }
             else
             {
@@ -32,5 +40,41 @@ public partial class VnWindowManager : Control
             }
         }
     }
+
+    public override void _Input(InputEvent @event)
+    {
+        if(Input.IsKeyPressed(Key.Alt))
+        {
+            if(@event is InputEventKey key )
+            {
+                if(key.Pressed && key.Keycode == Key.Key1)
+                    GotoScene(0);
+                else if(key.Pressed && key.Keycode == Key.Key2)
+                    GotoScene(1);
+                else if(key.Pressed && key.Keycode == Key.Key3)
+                    GotoScene(2);
+                else if(key.Pressed && key.Keycode == Key.Key4)
+                    GotoScene(3);
+                else if(key.Pressed && key.Keycode == Key.Key5)
+                    GotoScene(4);
+                else if(key.Pressed && key.Keycode == Key.Key6)
+                    GotoScene(5);
+                else if(key.Pressed && key.Keycode == Key.Key7)
+                    GotoScene(6);
+                else if(key.Pressed && key.Keycode == Key.Key8)
+                    GotoScene(7);
+                else if(key.Pressed && key.Keycode == Key.Key9)
+                    GotoScene(8);
+                else if(key.Pressed && key.Keycode == Key.Key0)
+                    GotoScene(9);
+                else if(key.Pressed && key.Keycode == Key.Minus)
+                    GotoScene(10);
+                else if(key.Pressed && key.Keycode == Key.Equal)
+                    GotoScene(11);
+            }
+            
+        }
+    }
+
 
 }
