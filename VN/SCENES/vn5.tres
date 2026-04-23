@@ -20,7 +20,7 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": &"1_2",
+"link": &"3_3",
 "text": ""
 }
 },
@@ -38,7 +38,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 359.99997),
+"size": Vector2(300, 360.00006),
 "speaker": 5
 },
 &"1_11": {
@@ -52,7 +52,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 419.99997),
+"size": Vector2(320.00024, 420.00006),
 "speaker": 0
 },
 &"1_12": {
@@ -66,7 +66,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 379.99997),
+"size": Vector2(300.00024, 380),
 "speaker": 9
 },
 &"1_13": {
@@ -80,7 +80,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 340),
+"size": Vector2(320, 340.00003),
 "speaker": 2
 },
 &"1_14": {
@@ -93,7 +93,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 360),
+"size": Vector2(319.99976, 360.00003),
 "speaker": 6
 },
 &"1_15": {
@@ -107,7 +107,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(359.99902, 380),
+"size": Vector2(359.99927, 380.00003),
 "speaker": 7
 },
 &"1_16": {
@@ -148,7 +148,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 340.00006),
+"size": Vector2(320, 340.00012),
 "speaker": 4
 },
 &"1_19": {
@@ -162,7 +162,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(360, 340.00006),
+"size": Vector2(360, 340.00012),
 "speaker": 0
 },
 &"1_2": {
@@ -176,7 +176,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 320),
+"size": Vector2(300.0001, 320),
 "speaker": 4
 },
 &"1_20": {
@@ -189,7 +189,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 400.00006),
+"size": Vector2(300, 400.00012),
 "speaker": 2
 },
 &"1_21": {
@@ -215,7 +215,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 400.00006),
+"size": Vector2(320, 400.00003),
 "speaker": 3
 },
 &"1_23": {
@@ -228,7 +228,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(339.9995, 360),
+"size": Vector2(340.0005, 360.00003),
 "speaker": 7
 },
 &"1_24": {
@@ -242,7 +242,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 360),
+"size": Vector2(319.9995, 360),
 "speaker": 7
 },
 &"1_25": {
@@ -256,7 +256,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(439.9995, 439.99997),
+"size": Vector2(439.99805, 439.99997),
 "speaker": 0
 },
 &"1_26": {
@@ -270,7 +270,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(400, 400.00006),
+"size": Vector2(399.9995, 400.00006),
 "speaker": 8
 },
 &"1_27": {
@@ -284,7 +284,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(379.99902, 420.00006),
+"size": Vector2(379.99902, 420.00003),
 "speaker": 0
 },
 &"1_28": {
@@ -297,7 +297,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 360.0001),
+"size": Vector2(320, 360.00006),
 "speaker": 8
 },
 &"1_29": {
@@ -310,7 +310,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(400.00098, 399.99997),
+"size": Vector2(400.00098, 399.99994),
 "speaker": 0
 },
 &"1_3": {
@@ -320,11 +320,11 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": &"1_4",
+"link": &"3_4",
 "text": ""
 }
 },
-"size": Vector2(340, 380.00006),
+"size": Vector2(340.00006, 380.00003),
 "speaker": 1
 },
 &"1_30": {
@@ -338,7 +338,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(360, 360.0001),
+"size": Vector2(359.9995, 360.00006),
 "speaker": 9
 },
 &"1_31": {
@@ -352,7 +352,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(400.00098, 359.9998),
+"size": Vector2(400.0005, 359.99976),
 "speaker": 1
 },
 &"1_32": {
@@ -366,7 +366,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00098, 319.99994),
+"size": Vector2(300.00098, 319.99997),
 "speaker": 10
 },
 &"1_33": {
@@ -379,7 +379,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(380, 379.99994),
+"size": Vector2(380, 379.99997),
 "speaker": 0
 },
 &"1_34": {
@@ -392,7 +392,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 319.99997),
+"size": Vector2(320, 320.00006),
 "speaker": 1
 },
 &"1_35": {
@@ -406,7 +406,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(340, 319.99994),
+"size": Vector2(340, 319.99997),
 "speaker": 11
 },
 &"1_36": {
@@ -419,7 +419,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 379.99994),
+"size": Vector2(320, 379.99997),
 "speaker": 0
 },
 &"1_37": {
@@ -432,7 +432,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(420, 379.99994),
+"size": Vector2(419.9995, 379.99988),
 "speaker": 3
 },
 &"1_38": {
@@ -446,7 +446,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(420, 399.99997),
+"size": Vector2(420, 400.00006),
 "speaker": 0
 },
 &"1_39": {
@@ -459,7 +459,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(380, 419.99997),
+"size": Vector2(380, 420),
 "speaker": 5
 },
 &"1_4": {
@@ -472,7 +472,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(380, 420),
+"size": Vector2(380.00006, 420.00003),
 "speaker": 5
 },
 &"1_40": {
@@ -513,7 +513,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(380, 339.99988),
+"size": Vector2(380, 339.99994),
 "speaker": 1
 },
 &"1_43": {
@@ -527,7 +527,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(400, 300),
+"size": Vector2(400, 299.99994),
 "speaker": 10
 },
 &"1_44": {
@@ -540,7 +540,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(360, 340),
+"size": Vector2(360.00098, 340),
 "speaker": 0
 },
 &"1_45": {
@@ -567,7 +567,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 339.99988),
+"size": Vector2(319.99902, 339.99988),
 "speaker": 1
 },
 &"1_5": {
@@ -580,7 +580,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 380),
+"size": Vector2(300.00006, 380.00003),
 "speaker": 4
 },
 &"1_6": {
@@ -594,7 +594,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 360.00006),
+"size": Vector2(300.00024, 360.0001),
 "speaker": 0
 },
 &"1_7": {
@@ -608,7 +608,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(360, 420.00006),
+"size": Vector2(360, 420.00003),
 "speaker": 0
 },
 &"1_8": {
@@ -622,7 +622,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 320),
+"size": Vector2(300.00012, 320),
 "speaker": 10
 },
 &"1_9": {
@@ -635,7 +635,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 379.99997),
+"size": Vector2(300.00012, 380.00006),
 "speaker": 3
 },
 &"3_1": {
@@ -647,6 +647,16 @@ nodes = {
 "link": &"1_21",
 "offset": Vector2(7720, 720),
 "signalValue": "ShowKoda"
+},
+&"3_3": {
+"link": &"1_2",
+"offset": Vector2(348.1, 479),
+"signalValue": "SFXvictoryWill"
+},
+&"3_4": {
+"link": &"1_4",
+"offset": Vector2(980.60004, 734.2),
+"signalValue": "PlayBGM"
 }
 }
 characters = "res://VN/characters.tres"

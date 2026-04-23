@@ -92,7 +92,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(400, 320),
+"size": Vector2(399.99976, 320),
 "speaker": 10
 },
 &"1_15": {
@@ -116,7 +116,7 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": &"1_3",
+"link": &"3_2",
 "text": ""
 }
 },
@@ -142,11 +142,11 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": &"1_5",
+"link": &"3_3",
 "text": ""
 }
 },
-"size": Vector2(300, 340),
+"size": Vector2(300.00012, 340),
 "speaker": 5
 },
 &"1_5": {
@@ -223,6 +223,16 @@ nodes = {
 "link": &"1_12",
 "offset": Vector2(4282.74, 793.35004),
 "signalValue": "SFXPhoneWill"
+},
+&"3_2": {
+"link": &"1_3",
+"offset": Vector2(768, 442),
+"signalValue": "SFXvictoryCombined"
+},
+&"3_3": {
+"link": &"1_5",
+"offset": Vector2(1448, 691),
+"signalValue": "PlayBGM"
 }
 }
 characters = "res://VN/characters.tres"

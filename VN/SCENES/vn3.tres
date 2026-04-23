@@ -23,7 +23,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 291),
+"size": Vector2(300, 290.99997),
 "speaker": 9
 },
 &"1_10": {
@@ -50,7 +50,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(359.99902, 339.99988),
+"size": Vector2(359.99902, 339.99985),
 "speaker": 6
 },
 &"1_12": {
@@ -64,7 +64,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(360, 319.99988),
+"size": Vector2(360, 319.99985),
 "speaker": 1
 },
 &"1_13": {
@@ -78,7 +78,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(379.99805, 320),
+"size": Vector2(379.9978, 320.00003),
 "speaker": 7
 },
 &"1_14": {
@@ -92,7 +92,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(340, 300),
+"size": Vector2(339.99976, 300.00003),
 "speaker": 1
 },
 &"1_15": {
@@ -106,7 +106,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 300),
+"size": Vector2(320.00024, 300.00003),
 "speaker": 4
 },
 &"1_16": {
@@ -120,7 +120,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 339.99988),
+"size": Vector2(300, 339.9999),
 "speaker": 0
 },
 &"1_17": {
@@ -133,7 +133,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 285.99994),
+"size": Vector2(300.00024, 286),
 "speaker": ""
 },
 &"1_18": {
@@ -146,7 +146,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 319.99994),
+"size": Vector2(300.00024, 319.99994),
 "speaker": 2
 },
 &"1_19": {
@@ -159,7 +159,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(340, 299.99994),
+"size": Vector2(340, 299.99988),
 "speaker": 7
 },
 &"1_2": {
@@ -169,7 +169,7 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": &"1_3",
+"link": &"3_5",
 "text": ""
 }
 },
@@ -187,7 +187,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320.0005, 339.99994),
+"size": Vector2(320.0005, 339.99988),
 "speaker": 2
 },
 &"1_21": {
@@ -200,7 +200,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320, 359.99994),
+"size": Vector2(320, 359.99988),
 "speaker": 6
 },
 &"1_22": {
@@ -214,7 +214,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 319.99994),
+"size": Vector2(300, 319.99988),
 "speaker": 0
 },
 &"1_23": {
@@ -227,7 +227,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(340, 319.99994),
+"size": Vector2(340, 320),
 "speaker": 11
 },
 &"1_24": {
@@ -240,7 +240,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 359.9999),
+"size": Vector2(300, 359.99994),
 "speaker": 2
 },
 &"1_25": {
@@ -253,7 +253,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 339.99994),
+"size": Vector2(300, 340),
 "speaker": 0
 },
 &"1_26": {
@@ -266,7 +266,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(320.00024, 319.99994),
+"size": Vector2(320, 320),
 "speaker": 6
 },
 &"1_27": {
@@ -279,7 +279,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(359.99927, 319.99994),
+"size": Vector2(359.99902, 320),
 "speaker": 11
 },
 &"1_28": {
@@ -293,7 +293,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00024, 299.99994),
+"size": Vector2(300.00098, 300),
 "speaker": 2
 },
 &"1_29": {
@@ -306,7 +306,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(359.99902, 299.99994),
+"size": Vector2(359.99805, 300),
 "speaker": 7
 },
 &"1_3": {
@@ -332,7 +332,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 419.99985),
+"size": Vector2(300.00098, 419.99988),
 "speaker": 11
 },
 &"1_31": {
@@ -346,7 +346,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(380.00098, 399.99985),
+"size": Vector2(380.00098, 399.99988),
 "speaker": 11
 },
 &"1_32": {
@@ -359,7 +359,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(360.0005, 319.99994),
+"size": Vector2(360, 320),
 "speaker": 3
 },
 &"1_33": {
@@ -373,7 +373,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(340, 319.99994),
+"size": Vector2(340, 320),
 "speaker": 7
 },
 &"1_34": {
@@ -387,7 +387,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(360, 379.99985),
+"size": Vector2(360, 379.99988),
 "speaker": 1
 },
 &"1_35": {
@@ -400,7 +400,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(440.00146, 459.9999),
+"size": Vector2(440.00195, 459.99994),
 "speaker": 11
 },
 &"1_36": {
@@ -413,7 +413,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(459.9995, 480.00003),
+"size": Vector2(460, 480),
 "speaker": 2
 },
 &"1_37": {
@@ -441,7 +441,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(420, 460.00027),
+"size": Vector2(420, 460.00034),
 "speaker": 1
 },
 &"1_39": {
@@ -454,7 +454,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(379.99902, 379.99988),
+"size": Vector2(379.99902, 379.9999),
 "speaker": 7
 },
 &"1_4": {
@@ -480,7 +480,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(380, 360.00006),
+"size": Vector2(380, 359.99997),
 "speaker": 0
 },
 &"1_41": {
@@ -494,7 +494,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(320, 339.9997),
+"size": Vector2(320, 339.9998),
 "speaker": 2
 },
 &"1_42": {
@@ -508,7 +508,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(379.99707, 399.99976),
+"size": Vector2(379.9961, 399.99985),
 "speaker": 11
 },
 &"1_43": {
@@ -522,7 +522,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(420, 459.99994),
+"size": Vector2(420, 459.99985),
 "speaker": 0
 },
 &"1_44": {
@@ -535,7 +535,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(300, 359.99963),
+"size": Vector2(300, 359.9995),
 "speaker": 4
 },
 &"1_45": {
@@ -548,7 +548,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(360.0005, 359.99945),
+"size": Vector2(359.99902, 359.9995),
 "speaker": 1
 },
 &"1_46": {
@@ -588,7 +588,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(400, 419.99976),
+"size": Vector2(400, 419.99988),
 "speaker": 7
 },
 &"1_49": {
@@ -601,7 +601,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(420.00342, 379.99976),
+"size": Vector2(420.0039, 379.99988),
 "speaker": 6
 },
 &"1_5": {
@@ -611,11 +611,11 @@ No stakes, no posting, just something for you to play around with.
 "options": {
 0: {
 "condition": {},
-"link": &"1_6",
+"link": &"3_6",
 "text": ""
 }
 },
-"size": Vector2(320, 360),
+"size": Vector2(320, 360.00006),
 "speaker": 9
 },
 &"1_50": {
@@ -628,7 +628,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(400.00342, 380),
+"size": Vector2(400.0039, 380),
 "speaker": 0
 },
 &"1_6": {
@@ -641,7 +641,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(320, 320),
+"size": Vector2(320, 320.00006),
 "speaker": 0
 },
 &"1_7": {
@@ -654,7 +654,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(380, 360),
+"size": Vector2(379.99988, 360.00006),
 "speaker": 2
 },
 &"1_8": {
@@ -680,7 +680,7 @@ No stakes, no posting, just something for you to play around with.
 "text": ""
 }
 },
-"size": Vector2(320, 380.00018),
+"size": Vector2(320.00024, 380.00018),
 "speaker": 2
 },
 &"3_1": {
@@ -702,6 +702,16 @@ No stakes, no posting, just something for you to play around with.
 "link": &"1_39",
 "offset": Vector2(14950.186, 823.9955),
 "signalValue": "ShowKoda"
+},
+&"3_5": {
+"link": &"1_3",
+"offset": Vector2(469, 587),
+"signalValue": "SFXvictoryKoda"
+},
+&"3_6": {
+"link": &"1_6",
+"offset": Vector2(1746.0221, 783.0159),
+"signalValue": "PlayBGM"
 }
 }
 characters = "res://VN/characters.tres"
