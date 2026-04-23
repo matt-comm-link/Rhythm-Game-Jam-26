@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://da2vaxuv8dqdn" path="res://VN/sprites/Will Expressions/whimsyannoyedDim.png" id="3_220rt"]
 [ext_resource type="Texture2D" uid="uid://bflbcqfxorh6u" path="res://VN/sprites/Will Expressions/whimsyhappyDim.png" id="4_22s5u"]
 [ext_resource type="Texture2D" uid="uid://bx1xk27sd7j0p" path="res://VN/sprites/Will Expressions/whimsyneutralDim.png" id="5_4slb4"]
+[ext_resource type="AudioStream" uid="uid://dlmpqxyrjpm7a" path="res://VN/SFX/bgm/Koda_chill.mp3" id="5_5qhc4"]
 [ext_resource type="Texture2D" uid="uid://bfhsdjlv2yuy4" path="res://VN/sprites/Will Expressions/whimsysadDim.png" id="6_heyjr"]
 [ext_resource type="Texture2D" uid="uid://cj7ntunfgab1w" path="res://VN/sprites/Will Expressions/whimsyhappy.png" id="7_k78fi"]
 [ext_resource type="Texture2D" uid="uid://c73ycqdaipsdb" path="res://VN/sprites/Will Expressions/whimsyneutral.png" id="8_virq6"]
@@ -35,6 +36,9 @@
 [ext_resource type="Script" uid="uid://bd8vbglciaa2k" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="29_nxlat"]
 [ext_resource type="AudioStream" uid="uid://d00oef8pdnvu0" path="res://VN/SFX/computer_noise_bad.mp3" id="30_luwxp"]
 [ext_resource type="AudioStream" uid="uid://diosek126it38" path="res://VN/SFX/computer_noise_crash.mp3" id="31_5qhc4"]
+[ext_resource type="AudioStream" uid="uid://bsv6hkf4tpkww" path="res://VN/SFX/victory/Koda_success.mp3" id="33_lnj6n"]
+[ext_resource type="AudioStream" uid="uid://b2xcflq1rjdlk" path="res://VN/SFX/victory/Will_success.mp3" id="34_ehqjc"]
+[ext_resource type="AudioStream" uid="uid://dug7bh3rphcx7" path="res://VN/SFX/victory/Combined_success.mp3" id="35_tkp3b"]
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_c6wh6"]
 script = ExtResource("27_burin")
@@ -108,6 +112,7 @@ offset_right = 200.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("1_cty7q")
+bgm = ExtResource("5_5qhc4")
 NextScene = 11
 portraitWill = NodePath("../PortraitParent/Will")
 portraitKoda = NodePath("../PortraitParent/Koda")
@@ -148,7 +153,10 @@ dictSFX = Dictionary[String, AudioStream]({
 "ComputerBad": ExtResource("30_luwxp"),
 "ComputerVeryBad": ExtResource("31_5qhc4"),
 "PhoneKoda": ExtResource("27_k78fi"),
-"PhoneWill": ExtResource("28_virq6")
+"PhoneWill": ExtResource("28_virq6"),
+"victoryCombined": ExtResource("35_tkp3b"),
+"victoryKoda": ExtResource("33_lnj6n"),
+"victoryWill": ExtResource("34_ehqjc")
 })
 data = ExtResource("26_cty7q")
 start_id = "0"

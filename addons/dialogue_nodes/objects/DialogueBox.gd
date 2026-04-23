@@ -2,7 +2,8 @@
 ## A node for displaying branching dialogues, primarily created using the Dialogue Nodes editor.
 class_name DialogueBox
 extends Panel
- 
+
+@export var bgm : AudioStream; 
 
 @export var NextScene : int = 0;
 
@@ -177,6 +178,7 @@ var _wait_effect : RichTextWait
 
 
 var sfxPlayer : AudioStreamPlayer
+var bgPlayer : AudioStreamPlayer
 
 func _enter_tree():
 	if get_child_count() > 0:
@@ -207,6 +209,8 @@ func _enter_tree():
 	sfxPlayer = AudioStreamPlayer.new();
 	add_child(sfxPlayer);
 	
+	bgPlayer = AudioStreamPlayer.new();
+	add_child(bgPlayer);
 	
 	
 	_sub_container = BoxContainer.new()
@@ -371,6 +375,7 @@ func _on_dialogue_signal(value : String):
 	if gameManager == null:
 		return;
 	if value.contains(("SFX")):
+		print("PlaySFX")
 		sfxPlayer.stream = dictSFX[value.replace("SFX", "")];
 		sfxPlayer.play();
 		
@@ -395,7 +400,13 @@ func _on_dialogue_signal(value : String):
 	if value == "HideBG":
 		bgVisible = false;
 		bgRect.hide();
-	
+		
+	if value == "PlayBGM":
+		bgPlayer.stream = bgm
+		print("PlayBGM")
+		bgPlayer.play()
+	if value == "StopBGM":
+		bgPlayer.stop();
 	
 	dialogue_signal.emit(value)
 

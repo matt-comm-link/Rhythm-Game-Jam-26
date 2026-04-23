@@ -35,6 +35,9 @@
 [ext_resource type="AudioStream" uid="uid://bain65an4ww3i" path="res://VN/SFX/computer_noise.mp3" id="29_uxpmm"]
 [ext_resource type="AudioStream" uid="uid://d00oef8pdnvu0" path="res://VN/SFX/computer_noise_bad.mp3" id="30_qs6ax"]
 [ext_resource type="AudioStream" uid="uid://diosek126it38" path="res://VN/SFX/computer_noise_crash.mp3" id="31_lrn1t"]
+[ext_resource type="AudioStream" uid="uid://bsv6hkf4tpkww" path="res://VN/SFX/victory/Koda_success.mp3" id="32_ilyfo"]
+[ext_resource type="AudioStream" uid="uid://b2xcflq1rjdlk" path="res://VN/SFX/victory/Will_success.mp3" id="33_4y8v3"]
+[ext_resource type="AudioStream" uid="uid://dug7bh3rphcx7" path="res://VN/SFX/victory/Combined_success.mp3" id="34_p6gdb"]
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_c6wh6"]
 script = ExtResource("3_viw0m")
@@ -148,7 +151,10 @@ dictSFX = Dictionary[String, AudioStream]({
 "ComputerBad": ExtResource("30_qs6ax"),
 "ComputerVeryBad": ExtResource("31_lrn1t"),
 "PhoneKoda": ExtResource("27_34lue"),
-"PhoneWill": ExtResource("28_lrn1t")
+"PhoneWill": ExtResource("28_lrn1t"),
+"victoryCombined": ExtResource("34_p6gdb"),
+"victoryKoda": ExtResource("32_ilyfo"),
+"victoryWill": ExtResource("33_4y8v3")
 })
 data = ExtResource("26_5vc62")
 start_id = "0"
